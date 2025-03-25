@@ -5,6 +5,8 @@ from managers import WindowManager, CaptureManager
 import rects
 from trackers import FaceTracker
 
+
+#INTERCAMBIO DE CARAS
 class Cameo(object):
 
     def __init__(self):
@@ -167,6 +169,6 @@ class CameoDepth(Cameo):
             self._windowManager.processEvents()
 
 if __name__=="__main__":
-    #Cameo().run() # uncomment for single camera
-    CameoDouble().run() # uncomment for double camera
+    Cameo().run() # uncomment for single camera
+    #CameoDouble().run() # uncomment for double camera
     #CameoDepth().run() # uncomment for depth camera
