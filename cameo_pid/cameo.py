@@ -168,5 +168,5 @@ class CameoDepth(Cameo):
 
 if __name__=="__main__":
     #Cameo().run() # uncomment for single camera
-    #CameoDouble().run() # uncomment for double camera
-    CameoDepth().run() # uncomment for depth camera
+    CameoDouble().run() # uncomment for double camera
+    #CameoDepth().run() # uncomment for depth camera

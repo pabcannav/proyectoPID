@@ -24,9 +24,9 @@ class FaceTracker(object):
         self._faces = []
 
         self._faceClassifier = cv2.CascadeClassifier(
-            'cascades/haarcascade_frontalface_alt.xml')
+            'proyectoPID\cameo_pid\cascades\haarcascade_frontalface_alt.xml')
         self._eyeClassifier = cv2.CascadeClassifier(
-            'cascades/haarcascade_eye.xml')
+            'proyectoPID\cameo_pid\cascades\haarcascade_eye.xml')
 
     @property
     def faces(self):
