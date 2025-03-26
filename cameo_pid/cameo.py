@@ -6,7 +6,7 @@ import rects
 from trackers import FaceTracker
 
 
-#INTERCAMBIO DE CARAS
+#INTERCAMBIO DE CARAS------------------------------------------------------------------------------------------
 class Cameo(object):
 
     def __init__(self):
@@ -63,7 +63,7 @@ class Cameo(object):
                 not self._shouldDrawDebugRects
         elif keycode == 27: # escape
             self._windowManager.destroyWindow()
-
+#-------------------------------------------------------------------------------------------------------------------------
 class CameoDouble(Cameo):
 
     def __init__(self):
@@ -104,7 +104,7 @@ class CameoDouble(Cameo):
             self._hiddenCaptureManager.exitFrame()
             self._windowManager.processEvents()
 
-#INTERCAMBIO DE CARAS
+
 class CameoDepth(Cameo):
 
     def __init__(self):
