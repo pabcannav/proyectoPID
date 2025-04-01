@@ -1,6 +1,4 @@
 import cv2
-import depth
-import filters
 from managers import WindowManager, CaptureManager
 import rects
 from trackers import FaceTracker
@@ -16,7 +14,7 @@ class Cameo(object):
             cv2.VideoCapture(0), self._windowManager, True)
         self._faceTracker = FaceTracker()
         self._shouldDrawDebugRects = False
-        self._curveFilter = filters.BGRPortraCurveFilter()
+        
 
     def run(self):
         """Run the main loop."""
@@ -32,8 +30,7 @@ class Cameo(object):
                 rects.swapRects(frame, frame,
                                 [face.faceRect for face in faces])
 
-                filters.strokeEdges(frame, frame)
-                self._curveFilter.apply(frame, frame)
+                
 
                 if self._shouldDrawDebugRects:
                     self._faceTracker.drawDebugRects(frame)
@@ -64,111 +61,8 @@ class Cameo(object):
         elif keycode == 27: # escape
             self._windowManager.destroyWindow()
 #-------------------------------------------------------------------------------------------------------------------------
-class CameoDouble(Cameo):
 
-    def __init__(self):
-        Cameo.__init__(self)
-        self._hiddenCaptureManager = CaptureManager(
-            cv2.VideoCapture(1))
-
-    def run(self):
-        """Run the main loop."""
-        self._windowManager.createWindow()
-        while self._windowManager.isWindowCreated:
-            self._captureManager.enterFrame()
-            self._hiddenCaptureManager.enterFrame()
-            frame = self._captureManager.frame
-            hiddenFrame = self._hiddenCaptureManager.frame
-
-            if frame is not None:
-                if hiddenFrame is not None:
-                    self._faceTracker.update(hiddenFrame)
-                    hiddenFaces = self._faceTracker.faces
-                    self._faceTracker.update(frame)
-                    faces = self._faceTracker.faces
-
-                    i = 0
-                    while i < len(faces) and i < len(hiddenFaces):
-                        rects.copyRect(
-                            hiddenFrame, frame, hiddenFaces[i].faceRect,
-                            faces[i].faceRect)
-                        i += 1
-
-                filters.strokeEdges(frame, frame)
-                self._curveFilter.apply(frame, frame)
-
-                if hiddenFrame is not None and self._shouldDrawDebugRects:
-                    self._faceTracker.drawDebugRects(frame)
-
-            self._captureManager.exitFrame()
-            self._hiddenCaptureManager.exitFrame()
-            self._windowManager.processEvents()
-
-
-class CameoDepth(Cameo):
-
-    def __init__(self):
-        self._windowManager = WindowManager('Cameo', self.onKeypress)
-        #device = cv2.CAP_OPENNI2 # uncomment for Microsoft Kinect via OpenNI2
-        #device = cv2.CAP_OPENNI2_ASUS # uncomment for Asus Xtion or Occipital Structure via OpenNI2
-        self._captureManager = CaptureManager(
-            cv2.VideoCapture(0), self._windowManager, True)
-        self._faceTracker = FaceTracker()
-        self._shouldDrawDebugRects = False
-        self._curveFilter = filters.BGRPortraCurveFilter()
-
-
-        """
-        self._windowManager = WindowManager('Cameo', self.onKeypress)
-        # Inicializa la cámara web (dispositivo 0 o 1)
-        self._captureManager = CaptureManager(
-            cv2.VideoCapture(0), self._windowManager, True)
-        self._faceTracker = FaceTracker()  # Rastreador de rostros
-        self._shouldDrawDebugRects = False  # Debug: dibujar rectángulos
-        self._curveFilter = filters.BGRPortraCurveFilter()  # Filtro de color
-        """
-
-    def run(self):
-        """Run the main loop."""
-        self._windowManager.createWindow()
-        while self._windowManager.isWindowCreated:
-            self._captureManager.enterFrame()
-            self._captureManager.channel = cv2.CAP_OPENNI_DISPARITY_MAP
-            disparityMap = self._captureManager.frame
-            self._captureManager.channel = cv2.CAP_OPENNI_VALID_DEPTH_MASK
-            validDepthMask = self._captureManager.frame
-            self._captureManager.channel = cv2.CAP_OPENNI_BGR_IMAGE
-            frame = self._captureManager.frame
-            if frame is None:
-                # Failed to capture a BGR frame.
-                # Try to capture an infrared frame instead.
-                self._captureManager.channel = cv2.CAP_OPENNI_IR_IMAGE
-                frame = self._captureManager.frame
-
-            if frame is not None:
-                self._faceTracker.update(frame)
-                faces = self._faceTracker.faces
-                masks = [
-                    depth.createMedianMask(
-                        disparityMap, validDepthMask, face.faceRect) \
-                    for face in faces
-                ]
-                rects.swapRects(frame, frame,
-                                [face.faceRect for face in faces], masks)
-
-                if self._captureManager.channel == cv2.CAP_OPENNI_BGR_IMAGE:
-                    # A BGR frame was captured.
-                    # Apply filters to it.
-                    filters.strokeEdges(frame, frame)
-                    self._curveFilter.apply(frame, frame)
-
-                if self._shouldDrawDebugRects:
-                    self._faceTracker.drawDebugRects(frame)
-
-            self._captureManager.exitFrame()
-            self._windowManager.processEvents()
 
 if __name__=="__main__":
     Cameo().run() # uncomment for single camera
-    #CameoDouble().run() # uncomment for double camera
-    #CameoDepth().run() # uncomment for depth camera
+    
