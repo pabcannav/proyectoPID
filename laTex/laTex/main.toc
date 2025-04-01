@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Resumen}{3}{}%
+\contentsline {section}{\numberline {2}Introducción}{3}{}%
+\contentsline {section}{\numberline {3}Planteamiento teórico}{3}{}%
+\contentsline {section}{\numberline {4}Implementación}{3}{}%
+\contentsline {section}{\numberline {5}Experimentación}{3}{}%
+\contentsline {section}{\numberline {6}Manual de usuario}{3}{}%
+\contentsline {section}{\numberline {7}Conclusiones}{3}{}%
+\contentsline {section}{\numberline {8}Autoevaluación de cada miembro}{3}{}%
+\contentsline {section}{\numberline {9}Tabla de tiempos}{3}{}%
