@@ -1,10 +1,23 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Resumen}{3}{}%
-\contentsline {section}{\numberline {2}Introducción}{3}{}%
-\contentsline {section}{\numberline {3}Planteamiento teórico}{3}{}%
-\contentsline {section}{\numberline {4}Implementación}{3}{}%
-\contentsline {section}{\numberline {5}Experimentación}{3}{}%
-\contentsline {section}{\numberline {6}Manual de usuario}{3}{}%
-\contentsline {section}{\numberline {7}Conclusiones}{3}{}%
-\contentsline {section}{\numberline {8}Autoevaluación de cada miembro}{3}{}%
-\contentsline {section}{\numberline {9}Tabla de tiempos}{3}{}%
+\contentsline {section}{\numberline {1}Resumen}{3}{section.1}%
+\contentsline {section}{\numberline {2}Introducción}{3}{section.2}%
+\contentsline {section}{\numberline {3}Planteamiento teórico}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}\textit {Conceptualizaing Haar Cascade Data}}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}\textit {Using OpenCV to Perform Face Detection}}{3}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}\textit {Performing Face Detection on a Still Image}}{3}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}\textit {Performing Face Detection on a Video}}{3}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}\textit {Performing Face Recognition}}{3}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}\textit {Improving the Haar Cascade Classifier}}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Implementación}{4}{section.4}%
+\contentsline {section}{\numberline {5}Experimentación}{4}{section.5}%
+\contentsline {section}{\numberline {6}Manual de usuario}{4}{section.6}%
+\contentsline {section}{\numberline {7}Conclusiones}{4}{section.7}%
+\contentsline {section}{\numberline {8}Autoevaluación de cada miembro}{4}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Autoevaluación de Alejandro}{4}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Autoevaluación de Pablo}{4}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Autoevaluación de Salvador}{4}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Tabla de tiempos}{4}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Tabla de tiempos del grupo}{4}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Tabla de tiempos de Alejandro}{4}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Tabla de tiempos de Pablo}{4}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Tabla de tiempos de Salvador}{4}{subsection.9.4}%
