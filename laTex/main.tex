@@ -1,15 +1,15 @@
 \documentclass[a4paper]{article}
 
 \usepackage[spanish]{babel}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 
 
-\title{Título del documento aquí} 
-\author{Alejandro Rodríguez Rodríguez, Pablo Cano Navajas, Salvador Caballero Macías}
+\title{Proyecto de investigación sobre detección de caras mediante OpenCV} 
+\author{Alejandro Rodríguez Rodríguez \and Pablo Cano Navajas \and Salvador Caballero Macías}
 
 \begin{document}
 
@@ -19,40 +19,70 @@
 \tableofcontents
 
 \newpage
-\section{Resumen}
+\section*{Resumen}
 
-Este documento detalla las diferentes implementaciones que se han llevado a cabo durante la implementación de las mismas, asi como los resultados obtenidos y las conclusiones a las que se ha llegado. El proyecto se ha realizado empleando el repositorio\textsuperscript{1} que se detalla en el libro escogido\textsuperscript{2}.
+Este documento detalla las diferentes implementaciones que se han llevado a cabo durante la implementación de las mismas, asi como los resultados obtenidos y las conclusiones a las que se ha llegado. El proyecto se ha realizado empleando el repositorio\cite{1} que se detalla en el libro escogido\cite{2}.
 De la documentacion escogida, se ha seleccionado el capítulo número 5, que trata sobre la detección de caras, tanto en imágenes como en captura en tiempo real, así como las implementaciones de mejoras de los algoritmos que se tratan en el libro para detectar un mayor número de caras o distintos objetos que cumplan unas restricciones que se impongan.
 
 \section{Introducción}
 
 \section{Planteamiento teórico}
 
-En esta sección se detalla el planteamiento teórico del capítulo 5 del libro\textsuperscript{2}. Se dividirá en 3 subapartados, correspondientes a los subapartados del propio capítulo:
+En esta sección se detalla el planteamiento teórico del capítulo 5 del libro\cite{2}, que se centrará en los fundamentos de las cascadas de Haar mediante el uso de OpenCV para la detección de caras. Se dividirá en 3 subapartados, correspondientes a los subapartados del propio capítulo:
 
-\subsection{\textit{Conceptualizaing Haar Cascade Data}}
+\subsection{Conceptualizing Haar Cascade Data}
 
 subseccion1
 
-\subsection{\textit{Using OpenCV to Perform Face Detection}}
+\subsection{Using OpenCV to Perform Face Detection}
 
-En esta sección se explica cómo detectar caras tanto en imagenes como en una entrada de vídeo en tiempo real (e.g. una cámara de vídeo). A su vez, se divide en 3 subapartados:
+En este apartado se detalla el uso de OpenCV para realizar la detección de caras, tanto en imágenes estáticas como en entradas de vídeo en tiempo real. OpenCV proporciona herramientas avanzadas para el procesamiento de imágenes y la detección de objetos mediante el uso de clasificadores en cascada de Haar.\\
+La detección de caras se realiza utilizando archivos XML que contienen los datos preentrenados para identificar características faciales específicas. Estos clasificadores se cargan mediante la función \texttt{cv2.CascadeClassifier}, que permite aplicar los modelos a imágenes o fotogramas de vídeo.
+Para detectar caras en imágenes estáticas, se utiliza el script \texttt{\detokenize{0_stillImageFaceDetection.ipynb}}. Este script carga una imagen, aplica un clasificador en cascada y detecta las caras presentes en la misma. El proceso incluye los siguientes pasos:
+\begin{itemize}
+    \item Carga de la imagen mediante \texttt{cv2.imread}.
+    \item Conversión de la imagen a escala de grises para optimizar el rendimiento del clasificador.
+    \item Uso del clasificador \texttt{haarcascade\_frontalface\_default.xml} para detectar caras.
+\end{itemize}
 
-\subsubsection{\textit{Performing Face Detection on a Still Image}}
+El script \texttt{1\_cameraFaceDetection.ipynb} implementa la detección de caras en tiempo real utilizando la cámara del dispositivo. Este proceso incluye:
+\begin{itemize}
+    \item Captura de vídeo en tiempo real mediante \texttt{cv2.VideoCapture}.
+    \item Aplicación del clasificador en cascada a cada fotograma del vídeo.
+    \item Detección de características adicionales, como ojos, utilizando el archivo \texttt{haarcascade\_eye.xml}.
+\end{itemize}
 
-\subsubsection{\textit{Performing Face Detection on a Video}}
-
-\subsubsection{\textit{Performing Face Recognition}}
-
-\subsection{\textit{Improving the Haar Cascade Classifier}}
+\subsection{Improving the Haar Cascade Classifier}
 
 subseccion3
 
 \section{Implementación}
 
+\subsection{Conceptualizing Haar Cascade Data}
+
+implementacion1
+
+\subsection{Using OpenCV to Perform Face Detection}
+
+En esta sección se explica cómo detectar caras tanto en imagenes como en una entrada de vídeo en tiempo real (e.g. una cámara de vídeo). A su vez, se divide en 3 subapartados:
+
+\subsection{Improving the Haar Cascade Classifier}
+
+implementacion3
+
 \section{Experimentación}
 
 \section{Manual de usuario}
+
+Para el correcto funcionamiento de los scripts, es necessario la instalación de los siguientes paquetes:
+
+\begin{itemize}
+    \item Windows 7, MacOS 10.7 o superior.
+    \item Python 3.8 o superior.
+    \item OpenCV 4.0 o superior.
+    \item NumPy 1.16 o superior.
+    \item Scipy 1.1 o superior.
+\end{itemize}
 
 \section{Conclusiones}
 
