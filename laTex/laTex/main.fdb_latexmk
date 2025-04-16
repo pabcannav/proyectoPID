@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1744106738.24959 "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" "laTex/main.pdf" "main" 1744106740.73823 0
+["pdflatex"] 1744798210.9104 "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" "laTex/main.pdf" "main" 1744798212.26557 0
   "C:/Users/rodri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743577272 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/rodri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1743501629 25420 7d8a518b0d93ac71429790de224c6f4e ""
   "C:/Users/rodri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1743579782 31952 31341bb1e5d3c5c1c192103571e96254 ""
@@ -86,11 +86,11 @@
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" 1744106736 4938 895feeede8c353637c629ebb020f61de ""
-  "laTex/main.aux" 1744106740 3105 7df813b99abac9c0d0e7203fa036c884 "pdflatex"
-  "laTex/main.out" 1744106740 3968 51a59d865ae90cb704119ee71278495a "pdflatex"
-  "laTex/main.toc" 1744106740 1881 5a9ef37d82fe84a059d8b00919ccfb90 "pdflatex"
-  "main.tex" 1744106736 4938 895feeede8c353637c629ebb020f61de ""
+  "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" 1744798210 6046 0806e47ba141687584fea920ace7eb55 ""
+  "laTex/main.aux" 1744798212 3105 6e36eb7bb343bc45a577a32674adebe7 "pdflatex"
+  "laTex/main.out" 1744798212 3968 51a59d865ae90cb704119ee71278495a "pdflatex"
+  "laTex/main.toc" 1744798212 1881 a8071ab73e36d8e2fa1023219cd509f7 "pdflatex"
+  "main.tex" 1744798210 6046 0806e47ba141687584fea920ace7eb55 ""
   (generated)
   "laTex/main.aux"
   "laTex/main.log"

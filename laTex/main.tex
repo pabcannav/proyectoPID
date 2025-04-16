@@ -36,9 +36,23 @@ subseccion1
 
 \subsection{Using OpenCV to Perform Face Detection}
 
-En este apartado se detalla el uso de OpenCV para realizar la detección de caras, tanto en imágenes estáticas como en entradas de vídeo en tiempo real. OpenCV proporciona herramientas avanzadas para el procesamiento de imágenes y la detección de objetos mediante el uso de clasificadores en cascada de Haar.\\
+\subsection{Improving the Haar Cascade Classifier}
+
+subseccion3
+
+\section{Implementación}
+
+\subsection{Conceptualizing Haar Cascade Data}
+
+implementacion1
+
+\subsection{Using OpenCV to Perform Face Detection}
+
+En esta sección se explica cómo detectar caras tanto en imagenes como en una entrada de vídeo en tiempo real (e.g. una cámara de vídeo).
+OpenCV proporciona herramientas avanzadas para el procesamiento de imágenes y la detección de objetos mediante el uso de clasificadores en cascada de Haar.\newline
 La detección de caras se realiza utilizando archivos XML que contienen los datos preentrenados para identificar características faciales específicas. Estos clasificadores se cargan mediante la función \texttt{cv2.CascadeClassifier}, que permite aplicar los modelos a imágenes o fotogramas de vídeo.
 Para detectar caras en imágenes estáticas, se utiliza el script \texttt{\detokenize{0_stillImageFaceDetection.ipynb}}. Este script carga una imagen, aplica un clasificador en cascada y detecta las caras presentes en la misma. El proceso incluye los siguientes pasos:
+
 \begin{itemize}
     \item Carga de la imagen mediante \texttt{cv2.imread}.
     \item Conversión de la imagen a escala de grises para optimizar el rendimiento del clasificador.
@@ -54,20 +68,6 @@ El script \texttt{1\_cameraFaceDetection.ipynb} implementa la detección de cara
 
 \subsection{Improving the Haar Cascade Classifier}
 
-subseccion3
-
-\section{Implementación}
-
-\subsection{Conceptualizing Haar Cascade Data}
-
-implementacion1
-
-\subsection{Using OpenCV to Perform Face Detection}
-
-En esta sección se explica cómo detectar caras tanto en imagenes como en una entrada de vídeo en tiempo real (e.g. una cámara de vídeo). A su vez, se divide en 3 subapartados:
-
-\subsection{Improving the Haar Cascade Classifier}
-
 implementacion3
 
 \section{Experimentación}
@@ -77,11 +77,12 @@ implementacion3
 Para el correcto funcionamiento de los scripts, es necessario la instalación de los siguientes paquetes:
 
 \begin{itemize}
-    \item Windows 7, MacOS 10.7 o superior.
-    \item Python 3.8 o superior.
-    \item OpenCV 4.0 o superior.
-    \item NumPy 1.16 o superior.
-    \item Scipy 1.1 o superior.
+    \item \textbf{Windows 7, MacOS 10.7 o superior}.
+    \item \textbf{Python 3.8 o superior}. Para instalar Python, se recomienda instalar la versión más reciente accediendo a la página web \href{https://www.python.org/downloads/}{Python.org}. Haremos click en el botón de descarga y se descargará automáticamente el ejecutable. Si fuese necesario otra versión de python, en la misma págna se puede descargar la versión que se necesite.\\
+    Si se tiene instalado un sistema operativo distinto a windows, se puede acceder al enlace de \href{https://www.python.org/downloads/macos/}{versiones macOS} y descargar la que sea necesaria siempre que cumppla con los requisitos de instalación.
+    \item \textbf{OpenCV 4.0 o superior}. Para instalar la version 4.0 o superior de OpenCV, se recomienda usar el gestor de paquetes \texttt{pip}. Para ello, se abre una terminal y se ejecuta el comando \texttt{pip install opencv-python}. Si la máquina opera con macOS, se recomienda usar \texttt{brew}, escribiendo el comando \texttt{brew install opencv}.
+    \item \textbf{NumPy 1.16 o superior}. Para instalarlo, en una ventana de comandos escribiremos \texttt{pip install numpy} (para un entorno Windows) o \texttt{brew install numpy} (para un entorno macOS).
+    \item \textbf{Scipy 1.1 o superior}. Para instalarlo, en una ventana de comandos escribiremos \texttt{pip install scipy} (para un entorno Windows) o \texttt{brew install scipy} (para un entorno macOS).
 \end{itemize}
 
 \section{Conclusiones}

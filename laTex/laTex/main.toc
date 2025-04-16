@@ -3,10 +3,10 @@
 \contentsline {section}{\numberline {2}Planteamiento teórico}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Conceptualizing Haar Cascade Data}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Using OpenCV to Perform Face Detection}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Improving the Haar Cascade Classifier}{4}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Implementación}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Conceptualizing Haar Cascade Data}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Using OpenCV to Perform Face Detection}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {2.3}Improving the Haar Cascade Classifier}{3}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Implementación}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Conceptualizing Haar Cascade Data}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Using OpenCV to Perform Face Detection}{3}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Improving the Haar Cascade Classifier}{4}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Experimentación}{4}{section.4}%
 \contentsline {section}{\numberline {5}Manual de usuario}{4}{section.5}%

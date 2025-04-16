@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.1)  8 APR 2025 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.1)  16 APR 2025 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -309,7 +309,7 @@ LaTeX Info: Redefining \% on input line 1.
 \openout4 = `main.toc'.
 
  [2]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 40.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 53.
  (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [3] [4] [5] (c:\Users\rodri\Documents\proyectoPID\laTex\laTex\main.aux
@@ -326,15 +326,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  10787 strings out of 474485
  169449 string characters out of 5743735
- 1933542 words of memory out of 5000000
+ 1935542 words of memory out of 5000000
  32914 multiletter control sequences out of 15000+600000
  568322 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,79p,483b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk>
-Output written on c:\Users\rodri\Documents\proyectoPID\laTex\laTex\main.pdf (5 pages, 126204 bytes).
+Output written on c:\Users\rodri\Documents\proyectoPID\laTex\laTex\main.pdf (5 pages, 131069 bytes).
 PDF statistics:
- 468 PDF objects out of 1000 (max. 8388607)
+ 481 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
