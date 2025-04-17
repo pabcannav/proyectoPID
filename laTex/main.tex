@@ -26,25 +26,45 @@ De la documentacion escogida, se ha seleccionado el capítulo número 5, que tra
 
 \section{Introducción}
 
+El capítulo 5 del libro \textit{Learning OpenCV 4 Computer Vision with Python 3 Third Edition} \cite{1} se centra en la \textbf{detección y reconocimiento de caras} [1]. Este capítulo introduce la funcionalidad de OpenCV para estas tareas, junto con los archivos de datos que definen tipos particulares de objetos rastreables [2]. Se exploran los \textbf{clasificadores de cascada Haar}, que analizan el contraste entre regiones de imagen adyacentes para determinar si una imagen o subimagen coincide con un tipo conocido [2].
+
 \section{Planteamiento teórico}
 
-En esta sección se detalla el planteamiento teórico del capítulo 5 del libro\cite{2}, que se centrará en los fundamentos de las cascadas de Haar mediante el uso de OpenCV para la detección de caras. Se dividirá en 3 subapartados, correspondientes a los subapartados del propio capítulo:
+En esta sección se detalla el planteamiento teórico del capítulo 5 del libro\cite{1}, que se centrará en los fundamentos de las cascadas de Haar mediante el uso de OpenCV para la detección de caras. Se dividirá en 3 subapartados, correspondientes a los subapartados del propio capítulo:
 
 \subsection{Conceptualizing Haar Cascade Data}
 
-subseccion1
+El concepto de clasificación de objetos y el seguimiento de su ubicación buscan identificar qué constituye una parte reconocible de un objeto . Las imágenes fotográficas pueden contener muchos detalles, pero estos detalles pueden ser inestables debido a variaciones en la iluminación, el ángulo de visión, la distancia de visión, el movimiento de la cámara y el ruido digital . Afortunadamente, para la clasificación, no todas las diferencias en los detalles físicos son relevantes .
+
+Las \textbf{características tipo Haar} son un tipo de característica que se aplica a menudo a la detección de rostros en tiempo real . Estas características describen el patrón de contraste entre regiones de imagen adyacentes . Por ejemplo, los bordes, los vértices y las líneas delgadas generan un tipo de característica . Algunas características son distintivas en el sentido de que típicamente ocurren en una cierta clase de objeto (como una cara) pero no en otros objetos . Estas características distintivas se pueden organizar en una jerarquía, llamada \textbf{cascada}, en la que las capas superiores contienen características de mayor distinción, lo que permite que un clasificador rechace rápidamente los sujetos que carecen de estas características .
+
+Las características pueden variar según la escala de la imagen y el tamaño del vecindario dentro del cual se evalúa el contraste, llamado \textbf{tamaño de ventana} . Para hacer que un clasificador de cascada Haar sea \textbf{invariante a la escala}, el tamaño de la ventana se mantiene constante pero las imágenes se reescalan varias veces; de esta manera, a algún nivel de reescalado, el tamaño de un objeto (como una cara) puede coincidir con el tamaño de la ventana . La imagen original y las imágenes reescaladas juntas se denominan \textbf{pirámide de imágenes}, y cada nivel sucesivo en esta pirámide es una imagen reescalada más pequeña . OpenCV proporciona un clasificador invariante a la escala que puede cargar una cascada Haar desde un archivo XML en un formato particular . Internamente, este clasificador convierte cualquier imagen dada en una pirámide de imágenes .
 
 \subsection{Using OpenCV to Perform Face Detection}
 
+El código fuente de OpenCV 4, o una instalación preempaquetada, debería contener una subcarpeta llamada \texttt{data/haarcascades} . Esta carpeta contiene archivos XML que pueden ser cargados por una clase de OpenCV llamada \texttt{cv2.CascadeClassifier} . Una instancia de esta clase interpreta un archivo XML dado como una cascada Haar, que proporciona un modelo de detección para un tipo de objeto como una cara . \texttt{cv2.CascadeClassifier} puede detectar este tipo de objeto en cualquier imagen, ya sea una imagen fija de un archivo o una serie de fotogramas de un archivo de video o una cámara de video .
+
+Para realizar la detección de caras, se puede crear un script básico que cargue un clasificador de cascada Haar para la detección de rostros y luego aplique este clasificador a una imagen . El método clave para realizar la detección de caras es \texttt{detectMultiScale}, que se aplica a una imagen en escala de grises . Los parámetros de \texttt{detectMultiScale} incluyen \texttt{scaleFactor} y \texttt{minNeighbors} . El argumento \texttt{scaleFactor}, que debe ser mayor que 1.0, determina la relación de reducción de escala de la imagen en cada iteración del proceso de detección de rostros . El argumento \texttt{minNeighbors} es el número mínimo de detecciones superpuestas que se requieren para conservar un resultado de detección .
+
+También es posible realizar la detección de caras en un video utilizando una cascada Haar para rostros y otra para ojos. El proceso implica capturar fotogramas de una cámara, convertirlos a escala de grises y luego aplicar el detector de rostros. Para cada rostro detectado, se puede definir una región de interés (ROI) y aplicar un detector de ojos dentro de esa ROI .
+
 \subsection{Improving the Haar Cascade Classifier}
 
-subseccion3
+La efectividad de un clasificador de cascada Haar puede verse afectada por los parámetros utilizados en la función \texttt{detectMultiScale}, como \texttt{scaleFactor} y \texttt{minNeighbors} . El \texttt{scaleFactor} influye en la robustez a diferentes tamaños de rostro, mientras que \texttt{minNeighbors} ayuda a reducir los falsos positivos al requerir múltiples detecciones superpuestas . Ajustar estos parámetros mediante experimentación puede mejorar el rendimiento del detector en diferentes condiciones de iluminación y para diferentes sujetos . Además, el uso de múltiples clasificadores en cascada, como uno para la detección frontal de rostros y otro para la detección de ojos dentro de la región facial detectada, puede aumentar la precisión de la detección de características específicas .
 
 \section{Implementación}
 
 \subsection{Conceptualizing Haar Cascade Data}
 
-implementacion1
+\textbf{implementacion1}
+
+Para utilizar un clasificador de cascada Haar en OpenCV para la detección de caras, el primer paso es cargar el archivo XML de la cascada utilizando la función \texttt{cv2.CascadeClassifier()} :
+
+\begin{verbatim}
+import cv2
+
+face_cascade = cv2.CascadeClassifier('./cascades/haarcascade_frontalface_default.xml')
+\end{verbatim}
 
 \subsection{Using OpenCV to Perform Face Detection}
 

@@ -1,0 +1,22 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Planteamiento teórico}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Conceptualizing Haar Cascade Data}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Using OpenCV to Perform Face Detection}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Improving the Haar Cascade Classifier}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Implementación}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Conceptualizing Haar Cascade Data}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Using OpenCV to Perform Face Detection}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Improving the Haar Cascade Classifier}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Experimentación}{6}{section.4}%
+\contentsline {section}{\numberline {5}Manual de usuario}{6}{section.5}%
+\contentsline {section}{\numberline {6}Conclusiones}{7}{section.6}%
+\contentsline {section}{\numberline {7}Autoevaluación de cada miembro}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Autoevaluación de Alejandro}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Autoevaluación de Pablo}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Autoevaluación de Salvador}{7}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Tabla de tiempos}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Tabla de tiempos del grupo}{7}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Tabla de tiempos de Alejandro}{7}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Tabla de tiempos de Pablo}{7}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Tabla de tiempos de Salvador}{7}{subsection.8.4}%
