@@ -28,9 +28,38 @@ De la documentacion escogida, se ha seleccionado el capítulo número 5, que tra
 
 El capítulo 5 del libro \textit{Learning OpenCV 4 Computer Vision with Python 3 Third Edition} \cite{1} se centra en la \textbf{detección y reconocimiento de caras} [1]. Este capítulo introduce la funcionalidad de OpenCV para estas tareas, junto con los archivos de datos que definen tipos particulares de objetos rastreables [2]. Se exploran los \textbf{clasificadores de cascada Haar}, que analizan el contraste entre regiones de imagen adyacentes para determinar si una imagen o subimagen coincide con un tipo conocido [2].
 
+La detección de rostros es un problema fundamental en el campo de la visión por computador, con aplicaciones que abarcan desde sistemas de seguridad
+hasta interfaces hombre-máquina1. Un método clásico y ampliamente utilizado
+para la detección de rostros es el uso de clasificadores en cascada de Haar,
+implementados eficientemente en bibliotecas como OpenCV2. Estos clasificadores
+analizan el contraste entre regiones adyacentes de una imagen mediante un
+conjunto de características similares a Haar organizadas en una estructura en
+cascada para una rápida evaluación de posibles regiones de rostro3. Si bien esta
+técnica ha demostrado ser efectiva en muchas situaciones, su rendimiento puede
+verse afectado por diversos factores, como la escala, la orientación y las condiciones
+de detección4. En este trabajo, exploramos una mejora en la detección
+de rostros utilizando los clasificadores en cascada de Haar mediante la optimizaci
+ón de los parámetros del proceso de detección, buscando un equilibrio entre
+la sensibilidad del detector y la reducción de falsos positivos.
+
 \section{Planteamiento teórico}
 
 En esta sección se detalla el planteamiento teórico del capítulo 5 del libro\cite{1}, que se centrará en los fundamentos de las cascadas de Haar mediante el uso de OpenCV para la detección de caras. Se dividirá en 3 subapartados, correspondientes a los subapartados del propio capítulo:
+
+Los clasificadores en cascada de Haar funcionan mediante la aplicación de
+una serie de clasificadores, cada uno entrenado para descartar la mayoría de
+las regiones negativas mientras retiene las regiones que contienen el objeto de
+intés (en este caso, rostros)5. Estos clasificadores se basan en la evaluación
+de características simples, computacionalmente eficientes, que codifican diferencias
+en la intensidad de píxeles entre regiones rectangulares adyacentes6. Para
+detectar rostros en imágenes de diferentes tamaños, se emplea una ventana de
+detección que se desliza sobre la imagen a diferentes escalas, generando múltiples
+subventanas para su análisis7.
+En OpenCV, la detección de múltiples escalas de rostros se implementa
+mediante la función detectMultiScale del objeto cv2.CascadeClassifier8.
+Esta función toma como entrada una imagen y varios parámetros que controlan
+el proceso de búsqueda de objetos. Dos de los parámetros más influyentes en el
+rendimiento del detector son scaleFactor y minNeighbors.
 
 \subsection{Conceptualizing Haar Cascade Data}
 
