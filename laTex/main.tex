@@ -182,9 +182,53 @@ Para el correcto funcionamiento de los scripts, es necessario la instalación de
     \item \textbf{NumPy 1.16 o superior}. Para instalarlo, en una ventana de comandos escribiremos \texttt{pip install numpy} (para un entorno Windows) o \texttt{brew install numpy} (para un entorno macOS).
     \item \textbf{Scipy 1.1 o superior}. Para instalarlo, en una ventana de comandos escribiremos \texttt{pip install scipy} (para un entorno Windows) o \texttt{brew install scipy} (para un entorno macOS).
 
-    AÑADIR INSTALACION DE LATEX EN VISUAL STUDIO CODE
-
 \end{itemize}
+
+\subsection{Instalación de Latex en Visual Studio Code}
+
+Para poder instalar Latex en visual studio code, es necesario instalar los siquientes paquetes:
+
+\begin{itemize}
+    \item \textbf{Visual Studio Code}. Para instalarlo, se puede acceder a la página web \href{https://code.visualstudio.com/}{Visual Studio Code} y descargar el instalador correspondiente al sistema operativo que se esté utilizando.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../img/vsc.png}
+    \caption{Página de descarga de Visual Studio Code.}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Latex Workshop}. Para instalarlo, abrimos Visual Studio Code y se accederemos a la pestaña de extensiones (icono de cuatro cuadrados en la barra lateral izquierda). En el campo de búsqueda, escribimos \texttt{latex workshop} y seleccionaremos la opción correspondiente (figura 9). Hacemos click en el botón de instalar.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../img/extensions.png}
+    \caption{Instalación de Latex Workshop.}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{MikTeX}. Para instalarlo, se puede acceder a la página web \href{https://miktex.org/download}{MikTeX} y descargar el instalador correspondiente al sistema operativo que se esté utilizando. Una vez descargado, ejecutamos el instalador y seguimos las instrucciones para completar la instalación.
+\end{itemize}
+    
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../img/miktex.png}
+    \caption{Página de descarga de MikTeX.}
+\end{figure}
+    
+
+Al final de la instalación se nos preguntará si queremos chequear si hay actualizaciones. Se recomienda chequear la opción para mantenerlo actualizado y evitar errores futuros.
+Para crear un nuevo fichero latex, crearemos el fichero con la extensión \texttt{.tex} y lo guardaremos en la carpeta donde se encuentre el proyecto. Para compilar el fichero, haremos click en el icono de \texttt{>} que aparece en el menú de arriba a la derecha en color verde y seleccionaremos la opción de compilar el documento. Esto generará un archivo PDF con el mismo nombre que el archivo \texttt{.tex}.
+
+Es posible que en el proceso de compilación del archivo aparezcan ventanas emergentes pidiendo instalar una serie de paquetes necesarios, instalaremos todos y cuando termine la instalación de todos estos paquetes, se abrirá el archivo compilado en formato PDF. Si no se abre automáticamente, podemos abrirlo manualmente haciendo click en el icono de \texttt{View Latex PDF File} que aparece 2 iconos a la derecha (icono con la lupa) de la opción de compilación (>) como se muestra en la figura 11. Si no aparece, podemos abrirlo manualmente desde la carpeta donde se guardó el archivo \textit{.tex} haciendo click derecho y selecionando la opción \textit{Open to the Side}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../img/menu.png}
+    \caption{Opciones del menú de la barra superior.}
+\end{figure}
 
 \section{Conclusiones}
 
@@ -214,9 +258,10 @@ Para el correcto funcionamiento de los scripts, es necessario la instalación de
 
 \newpage
 \section*{Anexos}
-\textbf{|1|} Como se aprecia en la imagen, el cuadrado en rojo indica la posicion de la cara detectada, dentro de este cuadrado se encuentran los elementos de caracteristicas haar, que van iterando sobre la imagen y detectando las facciones de la imagen (tanto ojos, nariz, boca, etc.). En \href{https://youtu.be/hPCTwxF0qf4}{este vídeo} se puede observar como el algoritmo va detectando las facciones.
+\textbf{|1|} Como se aprecia en la imagen, el cuadrado en rojo indica la posicion de la cara detectada, dentro de este cuadrado se encuentran los elementos de caracteristicas haar, que van iterando sobre la imagen y detectando las facciones de la imagen (tanto ojos, nariz, boca, etc.). En \href{https://youtu.be/hPCTwxF0qf4}{este vídeo} se puede observar como el algoritmo va detectando las facciones.\\
 
 \textbf{|2|} El parámetro \texttt{scaleFactor} es un atributo de reducción de escala útil para establecer una invariancia de escala. Por ejemplo, un valor de 1.08 hace que el algoritmo sea más exhaustivo, realizando más iteraciones y detectando caras con diferentes escalas, pero a una velocidad de procesamiento menor. Por el contrario, un valor de 1.3, lo hace más rápido pero algunas detecciones pueden perderse (objetos pequeños o medianos).
+
 El parámetro \texttt{minNeighbors} es un atributo de detección que establece el número mínimo de detecciones superpuestas requeridas para conservar un resultado de detección. Por ejemplo, un valor bajo (1) puede resultar en más falsos positivos, mientras que un valor más alto (2) reducirá el número de falsos positivos pero puede hacer que se pierdan algunas detecciones.
 
 \end{document}

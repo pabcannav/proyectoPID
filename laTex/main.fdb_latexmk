@@ -1,11 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1745334259.43212 "d:/Ing Informatica De Computadores/5º año/2º Cuatrimestre/Procesamiento de Imágenes Digitales/Trabajo de investigacion/proyectoPID/laTex/main.tex" "main.pdf" "main" 1745334260.60013 0
+["pdflatex"] 1745419421.52654 "d:/Ing Informatica De Computadores/5º año/2º Cuatrimestre/Procesamiento de Imágenes Digitales/Trabajo de investigacion/proyectoPID/laTex/main.tex" "main.pdf" "main" 1745419422.97602 0
+  "../img/extensions.png" 1745416943 81963 499072c7962b75cb9ab3acb9690436c8 ""
   "../img/haar_cascade.png" 1745331229 121794 363f1199c0bd96aeeb8b6179685ec628 ""
   "../img/haar_feat.png" 1745331229 24602 98e63f2daf68886f0c2f144b79777b32 ""
   "../img/haar_iter.png" 1745331229 441304 6f90dd2b426018c24287f25d357e1e1f ""
   "../img/hf1.png" 1745331229 444794 d5e8fdd0303dd858e360619ee2594355 ""
   "../img/hf2.png" 1745331229 322638 25812eb029e6890d6e75cccf0dd014ba ""
   "../img/hf3.png" 1745331229 352132 05a9f91bbedb2213cdb08560e24024c4 ""
+  "../img/menu.png" 1745419206 1192 feeb6f21d4c9dcf34c9454172b9c6990 ""
+  "../img/miktex.png" 1745418350 65515 198bed5ec125b85986a95d707c97a0a8 ""
+  "../img/vsc.png" 1745416739 59178 571a6931cda71755ee9bcb46db4cec17 ""
   "../img/woodcutters_face_detection.jpg" 1745334194 317015 fa30fb122837b1278245aa7013d27817 ""
   "../img/woodcutters_face_detection103.jpg" 1745334148 324409 aefd862bce9be4bfd4a1d3f16f235193 ""
   "../img/woodcutters_face_detection11.jpg" 1745334175 316913 80e843f41fb0adcbfe82098eaf82af07 ""
@@ -94,11 +98,11 @@
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "d:/Ing Informatica De Computadores/5º año/2º Cuatrimestre/Procesamiento de Imágenes Digitales/Trabajo de investigacion/proyectoPID/laTex/main.tex" 1745334257 16561 7f88857b21684ee7d613b525670fafe9 ""
-  "main.aux" 1745334260 4170 aec8c511e7a4f62a9d7082b20608a507 "pdflatex"
-  "main.out" 1745334260 4082 205722015119e684c04c88712ee3acee "pdflatex"
-  "main.tex" 1745334257 16561 7f88857b21684ee7d613b525670fafe9 ""
-  "main.toc" 1745334260 1855 115a5721a6099c7678248e89b852c552 "pdflatex"
+  "d:/Ing Informatica De Computadores/5º año/2º Cuatrimestre/Procesamiento de Imágenes Digitales/Trabajo de investigacion/proyectoPID/laTex/main.tex" 1745419419 19619 e4e054d5eeda74b263b1b730f65a0861 ""
+  "main.aux" 1745419422 4923 4754ede890273ba83d8400c1eb120746 "pdflatex"
+  "main.out" 1745419422 4371 c144af6294ef314916fd3c96a6234855 "pdflatex"
+  "main.tex" 1745419419 19619 e4e054d5eeda74b263b1b730f65a0861 ""
+  "main.toc" 1745419422 1974 fe4894f5b7c67b8108c8a1f7aacce347 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
