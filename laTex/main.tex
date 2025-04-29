@@ -131,7 +131,13 @@ OpenCV proporciona herramientas avanzadas para el procesamiento de imágenes y l
 
 \subsection{Implementación de Detección de Caras}
 
+En el repositorio, dentro de la carpeta faceDetection, podemos encontrar una serie de archivos. El archivo \texttt{0_stillImageFaceDetection} contiene el código para detectar imágenes estáticas con las explicaciones paso a paso del funcionamiento del algoritmo en inglés. Al final de dicho archivo se puede encontrar un apéndice con una explicación más extendida sobre ciertos parámetros o subrutinas de las funciones.
+
 El método clave para realizar la detección de caras es \texttt{detectMultiScale}, que se aplica a una imagen en escala de grises. Los parámetros de \texttt{detectMultiScale} incluyen \texttt{scaleFactor} y \texttt{minNeighbors} (\textit{Ver anexo 2}). El argumento \texttt{scaleFactor}, que debe ser mayor que 1.0, determina la relación de reducción de escala de la imagen en cada iteración del proceso de detección de rostros. El argumento \texttt{minNeighbors} es el número mínimo de detecciones superpuestas que se requieren para conservar un resultado de detección.
+
+También es posible realizar la detección de caras en un video utilizando una cascada Haar para rostros y otra para ojos. El proceso implica capturar fotogramas de una cámara, convertirlos a escala de grises y luego aplicar el detector de rostros. Para cada rostro detectado, se puede definir una región de interés (ROI) y aplicar un detector de ojos dentro de esa ROI.
+
+El \texttt{scaleFactor} influye en la robustez a diferentes tamaños de rostro, mientras que \texttt{minNeighbors} ayuda a reducir los falsos positivos al requerir múltiples detecciones superpuestas. Ajustar estos parámetros mediante experimentación puede mejorar el rendimiento del detector en diferentes condiciones de iluminación y para diferentes sujetos. Además, el uso de múltiples clasificadores en cascada, como uno para la detección frontal de rostros y otro para la detección de ojos dentro de la región facial detectada, puede aumentar la precisión de la detección de características específicas.
 
 \begin{figure}[h!]
     \centering
@@ -146,20 +152,20 @@ El método clave para realizar la detección de caras es \texttt{detectMultiScal
     \end{minipage}
 \end{figure}
 
-También es posible realizar la detección de caras en un video utilizando una cascada Haar para rostros y otra para ojos. El proceso implica capturar fotogramas de una cámara, convertirlos a escala de grises y luego aplicar el detector de rostros. Para cada rostro detectado, se puede definir una región de interés (ROI) y aplicar un detector de ojos dentro de esa ROI.
-
-El \texttt{scaleFactor} influye en la robustez a diferentes tamaños de rostro, mientras que \texttt{minNeighbors} ayuda a reducir los falsos positivos al requerir múltiples detecciones superpuestas. Ajustar estos parámetros mediante experimentación puede mejorar el rendimiento del detector en diferentes condiciones de iluminación y para diferentes sujetos. Además, el uso de múltiples clasificadores en cascada, como uno para la detección frontal de rostros y otro para la detección de ojos dentro de la región facial detectada, puede aumentar la precisión de la detección de características específicas.
+Como se puede apreciar en la primera figura, al tener un valor bajo detectará muchos recuadros, dando así falsos positivos. Si aumentamos excesivamente el valor, como se muestra en la figura 7, el algoritmo no detectará correctamente las caras.
 
 Para utilizar un clasificador de cascada Haar en OpenCV para la detección de caras, el primer paso es cargar el archivo XML de la cascada utilizando la función \texttt{cv2.CascadeClassifier()} :
 
 La detección de caras se realiza utilizando archivos XML que contienen los datos preentrenados para identificar características faciales específicas. Estos clasificadores se cargan mediante la función \texttt{cv2.CascadeClassifier}, que permite aplicar los modelos a imágenes o fotogramas de vídeo.
-Para detectar caras en imágenes estáticas, se utiliza el script \texttt{\detokenize{0_stillImageFaceDetection.ipynb}}. Este script carga una imagen, aplica un clasificador en cascada y detecta las caras presentes en la misma. El proceso incluye los siguientes pasos:
+El proceso incluye los siguientes pasos:
 
 \begin{itemize}
     \item Carga de la imagen mediante \texttt{cv2.imread}.
     \item Conversión de la imagen a escala de grises para optimizar el rendimiento del clasificador.
     \item Uso del clasificador \texttt{haarcascade\_frontalface\_default.xml} para detectar caras.
 \end{itemize}
+
+// TERMINAR EXPLICACION 1_cameraFaceDetection.ipynb //
 
 El script \texttt{1\_cameraFaceDetection.ipynb} implementa la detección de caras en tiempo real utilizando la cámara del dispositivo. Este proceso incluye:
 \begin{itemize}
@@ -244,7 +250,11 @@ Es posible que en el proceso de compilación del archivo aparezcan ventanas emer
 
 \subsection{Tabla de tiempos del grupo}
 
+// RELLENAR //
+
 \subsection{Tabla de tiempos de Alejandro}
+
+// RELLENAR //
 
 \subsection{Tabla de tiempos de Pablo}
 
@@ -259,8 +269,6 @@ Es posible que en el proceso de compilación del archivo aparezcan ventanas emer
 \newpage
 \section*{Anexos}
 \textbf{|1|} Como se aprecia en la imagen, el cuadrado en rojo indica la posicion de la cara detectada, dentro de este cuadrado se encuentran los elementos de caracteristicas haar, que van iterando sobre la imagen y detectando las facciones de la imagen (tanto ojos, nariz, boca, etc.). En \href{https://youtu.be/hPCTwxF0qf4}{este vídeo} se puede observar como el algoritmo va detectando las facciones.\\
-
-\textbf{|2|} El parámetro \texttt{scaleFactor} es un atributo de reducción de escala útil para establecer una invariancia de escala. Por ejemplo, un valor de 1.08 hace que el algoritmo sea más exhaustivo, realizando más iteraciones y detectando caras con diferentes escalas, pero a una velocidad de procesamiento menor. Por el contrario, un valor de 1.3, lo hace más rápido pero algunas detecciones pueden perderse (objetos pequeños o medianos).
 
 El parámetro \texttt{minNeighbors} es un atributo de detección que establece el número mínimo de detecciones superpuestas requeridas para conservar un resultado de detección. Por ejemplo, un valor bajo (1) puede resultar en más falsos positivos, mientras que un valor más alto (2) reducirá el número de falsos positivos pero puede hacer que se pierdan algunas detecciones.
 
