@@ -14,9 +14,9 @@ import cv2
 # cv2.imwrite('./woodcutters_detected.jpg', img)
 # cv2.waitKey(0)
 
-face_cascade = cv2.CascadeClassifier('proyectoPID\cascades\haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('cascades\haarcascade_frontalface_default.xml')
 
-eye_cascade = cv2.CascadeClassifier('proyectoPID\cascades\haarcascade_eye.xml')
+eye_cascade = cv2.CascadeClassifier('cascades\haarcascade_eye.xml')
 
 camera = cv2.VideoCapture(0)
 while (cv2.waitKey(1) == -1):
