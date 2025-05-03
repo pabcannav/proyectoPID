@@ -131,7 +131,7 @@ OpenCV proporciona herramientas avanzadas para el procesamiento de imágenes y l
 
 \subsection{Implementación de Detección de Caras}
 
-En el repositorio, dentro de la carpeta faceDetection, podemos encontrar una serie de archivos. El archivo \texttt{0_stillImageFaceDetection} contiene el código para detectar imágenes estáticas con las explicaciones paso a paso del funcionamiento del algoritmo en inglés. Al final de dicho archivo se puede encontrar un apéndice con una explicación más extendida sobre ciertos parámetros o subrutinas de las funciones.
+En el repositorio, dentro de la carpeta faceDetection, podemos encontrar una serie de archivos. El archivo \texttt{0\_stillImageFaceDetection} contiene el código para detectar imágenes estáticas con las explicaciones paso a paso del funcionamiento del algoritmo en inglés.Al final de dicho archivo se puede encontrar un apéndice con una explicación más extendida sobre ciertos parámetros o subrutinas de las funciones.
 
 El método clave para realizar la detección de caras es \texttt{detectMultiScale}, que se aplica a una imagen en escala de grises. Los parámetros de \texttt{detectMultiScale} incluyen \texttt{scaleFactor} y \texttt{minNeighbors} (\textit{Ver anexo 2}). El argumento \texttt{scaleFactor}, que debe ser mayor que 1.0, determina la relación de reducción de escala de la imagen en cada iteración del proceso de detección de rostros. El argumento \texttt{minNeighbors} es el número mínimo de detecciones superpuestas que se requieren para conservar un resultado de detección.
 
@@ -165,14 +165,26 @@ El proceso incluye los siguientes pasos:
     \item Uso del clasificador \texttt{haarcascade\_frontalface\_default.xml} para detectar caras.
 \end{itemize}
 
-// TERMINAR EXPLICACION 1_cameraFaceDetection.ipynb //
+El script \texttt{1\_cameraFaceDetection.ipynb} permite realizar la detección de caras en tiempo real utilizando la cámara del dispositivo. A continuación, se describen los pasos principales que realiza el script:
+Este script es útil para aplicaciones en las que se requiere detección de rostros en tiempo real, como sistemas de seguridad o análisis de video en vivo.
 
-El script \texttt{1\_cameraFaceDetection.ipynb} implementa la detección de caras en tiempo real utilizando la cámara del dispositivo. Este proceso incluye:
 \begin{itemize}
     \item Captura de vídeo en tiempo real mediante \texttt{cv2.VideoCapture}.
     \item Aplicación del clasificador en cascada a cada fotograma del vídeo.
     \item Detección de características adicionales, como ojos, utilizando el archivo \texttt{haarcascade\_eye.xml}.
 \end{itemize}
+
+El script \texttt{1\_cameraFaceDetection.ipynb} implementa la detección de caras en tiempo real utilizando la cámara del dispositivo. Este proceso incluye:
+
+\begin{itemize}
+    \item \textbf{Inicialización de la cámara}: Se utiliza la función \texttt{cv2.VideoCapture(0)} para acceder a la cámara del dispositivo. El argumento \texttt{0} indica que se usará la cámara predeterminada.
+    \item \textbf{Conversión a escala de grises}: Cada fotograma capturado se convierte a escala de grises mediante la función \texttt{cv2.cvtColor}, lo que mejora el rendimiento del clasificador.
+    \item \textbf{Detección de caras}: Se aplica el clasificador Haar cargado desde el archivo \texttt{haarcascade\_frontalface\_default.xml} para detectar rostros en cada fotograma.
+    \item \textbf{Dibujar rectángulos}: Por cada rostro detectado, se dibuja un rectángulo alrededor de la región detectada utilizando la función \texttt{cv2.rectangle}.
+    \item \textbf{Visualización en tiempo real}: Los fotogramas procesados se muestran en una ventana utilizando \texttt{cv2.imshow}, permitiendo observar las detecciones en tiempo real.
+    \item \textbf{Finalización del script}: El bucle de captura se detiene al presionar una tecla específica (por ejemplo, \texttt{q}), y se liberan los recursos de la cámara con \texttt{cap.release()}.
+\end{itemize}
+
 
 \subsection{Impementación de Clasificador de Cascada de Haar}
 
@@ -183,7 +195,7 @@ Para el correcto funcionamiento de los scripts, es necessario la instalación de
 \begin{itemize}
     \item \textbf{Windows 7, MacOS 10.7 o superior}.
     \item \textbf{Python 3.8 o superior}. Para instalar Python, se recomienda instalar la versión más reciente accediendo a la página web \href{https://www.python.org/downloads/}{Python.org}. Haremos click en el botón de descarga y se descargará automáticamente el ejecutable. Si fuese necesario otra versión de python, en la misma págna se puede descargar la versión que se necesite.\\
-    Si se tiene instalado un sistema operativo distinto a windows, se puede acceder al enlace de \href{https://www.python.org/downloads/macos/}{versiones macOS} y descargar la que sea necesaria siempre que cumppla con los requisitos de instalación.
+    Si se tiene instalado un sistema operativo distinto a windows, se puede acceder al enlace de \href{https://www.python.org/downloads/macos/}{versiones macOS} y descargar la que sea necesaria siempre que cumpla con los requisitos de instalación.
     \item \textbf{OpenCV 4.0 o superior}. Para instalar la version 4.0 o superior de OpenCV, se recomienda usar el gestor de paquetes \texttt{pip}. Para ello, se abre una terminal y se ejecuta el comando \texttt{pip install opencv-python}. Si la máquina opera con macOS, se recomienda usar \texttt{brew}, escribiendo el comando \texttt{brew install opencv}.
     \item \textbf{NumPy 1.16 o superior}. Para instalarlo, en una ventana de comandos escribiremos \texttt{pip install numpy} (para un entorno Windows) o \texttt{brew install numpy} (para un entorno macOS).
     \item \textbf{Scipy 1.1 o superior}. Para instalarlo, en una ventana de comandos escribiremos \texttt{pip install scipy} (para un entorno Windows) o \texttt{brew install scipy} (para un entorno macOS).
@@ -250,11 +262,7 @@ Es posible que en el proceso de compilación del archivo aparezcan ventanas emer
 
 \subsection{Tabla de tiempos del grupo}
 
-// RELLENAR //
-
 \subsection{Tabla de tiempos de Alejandro}
-
-// RELLENAR //
 
 \subsection{Tabla de tiempos de Pablo}
 
@@ -269,7 +277,5 @@ Es posible que en el proceso de compilación del archivo aparezcan ventanas emer
 \newpage
 \section*{Anexos}
 \textbf{|1|} Como se aprecia en la imagen, el cuadrado en rojo indica la posicion de la cara detectada, dentro de este cuadrado se encuentran los elementos de caracteristicas haar, que van iterando sobre la imagen y detectando las facciones de la imagen (tanto ojos, nariz, boca, etc.). En \href{https://youtu.be/hPCTwxF0qf4}{este vídeo} se puede observar como el algoritmo va detectando las facciones.\\
-
-El parámetro \texttt{minNeighbors} es un atributo de detección que establece el número mínimo de detecciones superpuestas requeridas para conservar un resultado de detección. Por ejemplo, un valor bajo (1) puede resultar en más falsos positivos, mientras que un valor más alto (2) reducirá el número de falsos positivos pero puede hacer que se pierdan algunas detecciones.
 
 \end{document}
