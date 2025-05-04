@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746266957.07879 "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" "laTex/main.pdf" "main" 1746266961.30474 0
+["pdflatex"] 1746352515.94167 "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" "laTex/main.pdf" "main" 1746352519.90659 0
   "../img/extensions.png" 1745995448 81963 499072c7962b75cb9ab3acb9690436c8 ""
   "../img/haar_cascade.png" 1745313799 121794 363f1199c0bd96aeeb8b6179685ec628 ""
   "../img/haar_feat.png" 1745316495 24602 98e63f2daf68886f0c2f144b79777b32 ""
@@ -10,7 +10,7 @@
   "../img/menu.png" 1745995448 1192 feeb6f21d4c9dcf34c9454172b9c6990 ""
   "../img/miktex.png" 1745995448 65515 198bed5ec125b85986a95d707c97a0a8 ""
   "../img/vsc.png" 1745995448 59178 571a6931cda71755ee9bcb46db4cec17 ""
-  "../img/woodcutters_face_detection.jpg" 1745311559 317015 fa30fb122837b1278245aa7013d27817 ""
+  "../img/woodcutters_face_detection.jpg" 1746352513 317015 fa30fb122837b1278245aa7013d27817 ""
   "../img/woodcutters_face_detection103.jpg" 1745401207 324409 aefd862bce9be4bfd4a1d3f16f235193 ""
   "../img/woodcutters_face_detection11.jpg" 1745401207 316913 80e843f41fb0adcbfe82098eaf82af07 ""
   "C:/Users/rodri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745317149 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -101,9 +101,9 @@
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" 1746266955 20819 38f160906b2156859687abaf6612bda0 ""
-  "laTex/main.aux" 1746266960 4887 eb8fb58f2b7ebbf4a346d1fdae1c66b4 "pdflatex"
-  "laTex/main.out" 1746266960 4371 c144af6294ef314916fd3c96a6234855 "pdflatex"
-  "laTex/main.toc" 1746266960 1974 0fad9b2508bf8982de40a964a51835aa "pdflatex"
+  "laTex/main.aux" 1746352519 4887 eb8fb58f2b7ebbf4a346d1fdae1c66b4 "pdflatex"
+  "laTex/main.out" 1746352519 4371 c144af6294ef314916fd3c96a6234855 "pdflatex"
+  "laTex/main.toc" 1746352519 1974 0fad9b2508bf8982de40a964a51835aa "pdflatex"
   "main.tex" 1746266955 20819 38f160906b2156859687abaf6612bda0 ""
   (generated)
   "laTex/main.aux"
