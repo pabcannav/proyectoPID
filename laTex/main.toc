@@ -7,8 +7,8 @@
 \contentsline {section}{\numberline {3}Implementación/Experimentación}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Implementación de Cascadas de Haar}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Implementación de Detección de Caras}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Impementación de Clasificador de Cascada de Haar}{8}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Manual de usuario}{8}{section.4}%
+\contentsline {subsection}{\numberline {3.3}Impementación de Clasificador de Cascada de Haar}{9}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Manual de usuario}{9}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Instalación de Latex en Visual Studio Code}{9}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Conclusiones}{11}{section.5}%
 \contentsline {section}{\numberline {6}Autoevaluación de cada miembro}{11}{section.6}%
