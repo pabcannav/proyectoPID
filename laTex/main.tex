@@ -65,7 +65,7 @@ subventanas para su análisis.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.6\textwidth]{../img/haar_iter.png}
-    \caption{Ejemplo de iteración sobre características de una cara.} (\textit{Ver anexo 1}).
+    \caption{Ejemplo de iteración sobre características de una cara.\cite{3}}
 \end{figure}
 
 En OpenCV, la detección de múltiples escalas de rostros se implementa
@@ -153,6 +153,23 @@ El \texttt{scaleFactor} influye en la robustez a diferentes tamaños de rostro, 
 \end{figure}
 
 Como se puede apreciar en la primera figura, al tener un valor bajo detectará muchos recuadros, dando así falsos positivos. Si aumentamos excesivamente el valor, como se muestra en la figura 7, el algoritmo no detectará correctamente las caras.
+
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{../img/multImages_face_detection103.jpg}
+        \caption{Ejemplo de detección con un índice de 1.03}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{../img/multImages_face_detection15.jpg}
+        \caption{Ejemplo de detección con un índice de 1.5}
+    \end{minipage}
+\end{figure}
+
+Como podemos observar, el índice de factor de escala afecta al número de detecciones. En la figura 6, con un índice de 1.03, se detectan más caras que en la figura 7, donde el índice es de 1.5. Esto se debe a que el índice de 1.03 permite una mayor variación en la escala de las imágenes, lo que resulta en más detecciones, mientras que un índice de 1.5 reduce la cantidad de detecciones al aumentar el tamaño de la ventana de búsqueda.
+
+Lo mismo ocurre en el caso de la figura 8, donde el índice de 1.03 detecta más caras que el índice de 1.5. En este caso, el índice de 1.03 permite una mayor variación en la escala de las imágenes, lo que resulta en más detecciones, mientras que un índice de 1.5 reduce la cantidad de detecciones al aumentar el tamaño de la ventana de búsqueda.\\
 
 Para utilizar un clasificador de cascada Haar en OpenCV para la detección de caras, el primer paso es cargar el archivo XML de la cascada utilizando la función \texttt{cv2.CascadeClassifier()} :
 
@@ -272,10 +289,11 @@ Es posible que en el proceso de compilación del archivo aparezcan ventanas emer
 \begin{thebibliography}{99}
 \bibitem{1} \textit{Repositorio del proyecto}, disponible en \href{https://github.com/PacktPublishing/Learning-OpenCV-4-Computer-Vision-with-Python-Third-Edition}{GitHub}
 \bibitem{2} Joseph Howse, Joe Minichino, \textit{Learning OpenCV 4 Computer Vision with Python 3}", Third edition, Packt Publishing, pp. 1-372, 2020
+\bibitem{3} \textit{Vídeo de detección de características Haar}, disponible en \href{https://youtu.be/hPCTwxF0qf4}{YouTube}
 \end{thebibliography}
 
 \newpage
 \section*{Anexos}
-\textbf{|1|} Como se aprecia en la imagen, el cuadrado en rojo indica la posicion de la cara detectada, dentro de este cuadrado se encuentran los elementos de caracteristicas haar, que van iterando sobre la imagen y detectando las facciones de la imagen (tanto ojos, nariz, boca, etc.). En \href{https://youtu.be/hPCTwxF0qf4}{este vídeo} se puede observar como el algoritmo va detectando las facciones.\\
+\textbf{|1|} Como se aprecia en la imagen, el cuadrado en rojo indica la posicion de la cara detectada, dentro de este cuadrado se encuentran los elementos de caracteristicas haar, que van iterando sobre la imagen y detectando las facciones de la imagen (tanto ojos, nariz, boca, etc.).
 
 \end{document}

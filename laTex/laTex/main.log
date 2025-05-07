@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.1)  4 MAY 2025 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.1)  7 MAY 2025 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,7 +332,7 @@ File: ../img/haar_iter.png Graphic file (type png)
 <use ../img/haar_iter.png>
 Package pdftex.def Info: ../img/haar_iter.png  used on input line 67.
 (pdftex.def)             Requested size: 207.0021pt x 150.38406pt.
-<../img/haar_feat.png, id=140, 343.2825pt x 299.1175pt>
+<../img/haar_feat.png, id=141, 343.2825pt x 299.1175pt>
 File: ../img/haar_feat.png Graphic file (type png)
 <use ../img/haar_feat.png>
 Package pdftex.def Info: ../img/haar_feat.png  used on input line 84.
@@ -347,17 +347,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.89 
       <../img/haar_iter.png>]
-<../img/hf1.png, id=148, 337.26pt x 261.97874pt>
+<../img/hf1.png, id=150, 337.26pt x 261.97874pt>
 File: ../img/hf1.png Graphic file (type png)
 <use ../img/hf1.png>
 Package pdftex.def Info: ../img/hf1.png  used on input line 95.
 (pdftex.def)             Requested size: 110.40253pt x 85.75769pt.
-<../img/hf2.png, id=149, 289.08pt x 212.59425pt>
+<../img/hf2.png, id=151, 289.08pt x 212.59425pt>
 File: ../img/hf2.png Graphic file (type png)
 <use ../img/hf2.png>
 Package pdftex.def Info: ../img/hf2.png  used on input line 99.
 (pdftex.def)             Requested size: 110.40253pt x 81.19214pt.
-<../img/hf3.png, id=150, 301.72725pt x 227.6505pt>
+<../img/hf3.png, id=152, 301.72725pt x 227.6505pt>
 File: ../img/hf3.png Graphic file (type png)
 <use ../img/hf3.png>
 Package pdftex.def Info: ../img/hf3.png  used on input line 103.
@@ -376,7 +376,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has
                                                   \__shipout_drop_firstpage_...
 l.113 
        <../img/haar_feat.png> <../img/hf1.png> <../img/hf2.png> <../img/hf3.png>]
-<../img/woodcutters_face_detection.jpg, id=161, 870.25125pt x 803.0pt>
+<../img/woodcutters_face_detection.jpg, id=163, 870.25125pt x 803.0pt>
 File: ../img/woodcutters_face_detection.jpg Graphic file (type jpg)
 <use ../img/woodcutters_face_detection.jpg>
 Package pdftex.def Info: ../img/woodcutters_face_detection.jpg  used on input line 118.
@@ -401,12 +401,12 @@ Overfull \hbox (11.98053pt too wide) in paragraph at lines 136--137
 \T1/cmr/m/n/10 in-clu-yen \T1/cmtt/m/n/10 scaleFactor \T1/cmr/m/n/10 y \T1/cmtt/m/n/10 minNeighbors \T1/cmr/m/n/10 (\T1/cmr/m/it/10 Ver ane-xo 2\T1/cmr/m/n/10 ). El ar-gu-men-to \T1/cmtt/m/n/10 scaleFactor\T1/cmr/m/n/10 ,
  []
 
-<../img/woodcutters_face_detection103.jpg, id=168, 870.25125pt x 803.0pt>
+<../img/woodcutters_face_detection103.jpg, id=170, 870.25125pt x 803.0pt>
 File: ../img/woodcutters_face_detection103.jpg Graphic file (type jpg)
 <use ../img/woodcutters_face_detection103.jpg>
 Package pdftex.def Info: ../img/woodcutters_face_detection103.jpg  used on input line 145.
 (pdftex.def)             Requested size: 165.59853pt x 152.79213pt.
-<../img/woodcutters_face_detection11.jpg, id=169, 870.25125pt x 803.0pt>
+<../img/woodcutters_face_detection11.jpg, id=171, 870.25125pt x 803.0pt>
 File: ../img/woodcutters_face_detection11.jpg Graphic file (type jpg)
 <use ../img/woodcutters_face_detection11.jpg>
 Package pdftex.def Info: ../img/woodcutters_face_detection11.jpg  used on input line 150.
@@ -422,66 +422,86 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has
                                                   \__shipout_drop_firstpage_...
 l.156 
        <../img/woodcutters_face_detection103.jpg> <../img/woodcutters_face_detection11.jpg>]
-Overfull \hbox (0.196pt too wide) in paragraph at lines 180--181
-[]\T1/cmr/bx/n/10 Inicialización de la cá-ma-ra\T1/cmr/m/n/10 : Se uti-li-za la fun-ción \T1/cmtt/m/n/10 cv2.VideoCapture(0)
+<../img/multImages_face_detection103.jpg, id=179, 614.295pt x 409.53pt>
+File: ../img/multImages_face_detection103.jpg Graphic file (type jpg)
+<use ../img/multImages_face_detection103.jpg>
+Package pdftex.def Info: ../img/multImages_face_detection103.jpg  used on input line 160.
+(pdftex.def)             Requested size: 165.59853pt x 110.3996pt.
+<../img/multImages_face_detection15.jpg, id=180, 614.295pt x 409.53pt>
+File: ../img/multImages_face_detection15.jpg Graphic file (type jpg)
+<use ../img/multImages_face_detection15.jpg>
+Package pdftex.def Info: ../img/multImages_face_detection15.jpg  used on input line 165.
+(pdftex.def)             Requested size: 165.59853pt x 110.3996pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
  []
 
-[8]
-<../img/vsc.png, id=184, 734.745pt x 415.5525pt>
-File: ../img/vsc.png Graphic file (type png)
-<use ../img/vsc.png>
-Package pdftex.def Info: ../img/vsc.png  used on input line 215.
-(pdftex.def)             Requested size: 207.0021pt x 117.07042pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../img/extensions.png, id=185, 656.4525pt x 413.29407pt>
-File: ../img/extensions.png Graphic file (type png)
-<use ../img/extensions.png>
-Package pdftex.def Info: ../img/extensions.png  used on input line 225.
-(pdftex.def)             Requested size: 207.0021pt x 130.32706pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9]
-<../img/miktex.png, id=191, 1164.60094pt x 628.59843pt>
-File: ../img/miktex.png Graphic file (type png)
-<use ../img/miktex.png>
-Package pdftex.def Info: ../img/miktex.png  used on input line 235.
-(pdftex.def)             Requested size: 207.0021pt x 111.72327pt.
- [10
+[8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.242 
-      
+l.189     \item C
+                 aptura de vÃ­deo en tiempo real mediante \texttt{cv2.VideoC...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.242 
-      
+l.189     \item C
+                 aptura de vÃ­deo en tiempo real mediante \texttt{cv2.VideoC... <../img/multImages_face_detection103.jpg> <../img/multImages_face_detection15.jpg>]
+Overfull \hbox (0.196pt too wide) in paragraph at lines 197--198
+[]\T1/cmr/bx/n/10 Inicialización de la cá-ma-ra\T1/cmr/m/n/10 : Se uti-li-za la fun-ción \T1/cmtt/m/n/10 cv2.VideoCapture(0)
+ []
+
+[9]
+<../img/vsc.png, id=194, 734.745pt x 415.5525pt>
+File: ../img/vsc.png Graphic file (type png)
+<use ../img/vsc.png>
+Package pdftex.def Info: ../img/vsc.png  used on input line 232.
+(pdftex.def)             Requested size: 207.0021pt x 117.07042pt.
+<../img/extensions.png, id=195, 656.4525pt x 413.29407pt>
+File: ../img/extensions.png Graphic file (type png)
+<use ../img/extensions.png>
+Package pdftex.def Info: ../img/extensions.png  used on input line 242.
+(pdftex.def)             Requested size: 207.0021pt x 130.32706pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../img/miktex.png, id=197, 1164.60094pt x 628.59843pt>
+File: ../img/miktex.png Graphic file (type png)
+<use ../img/miktex.png>
+Package pdftex.def Info: ../img/miktex.png  used on input line 252.
+(pdftex.def)             Requested size: 207.0021pt x 111.72327pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.242 
-       <../img/vsc.png> <../img/extensions.png> <../img/miktex.png>]
-<../img/menu.png, id=202, 192.72pt x 24.84282pt>
+l.259 
+       <../img/vsc.png>]
+<../img/menu.png, id=204, 192.72pt x 24.84282pt>
 File: ../img/menu.png Graphic file (type png)
 <use ../img/menu.png>
-Package pdftex.def Info: ../img/menu.png  used on input line 247.
+Package pdftex.def Info: ../img/menu.png  used on input line 264.
 (pdftex.def)             Requested size: 207.0021pt x 26.68388pt.
  [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.271 \newpage
-               <../img/menu.png>] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-[13] (c:\Users\rodri\Documents\proyectoPID\laTex\laTex\main.aux
+l.288 \newpage
+              
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.288 \newpage
+              
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.288 \newpage
+               <../img/extensions.png> <../img/miktex.png> <../img/menu.png>] [12] [13] [14] (c:\Users\rodri\Documents\proyectoPID\laTex\laTex\main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -493,17 +513,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C144AF6294EF314916FD3C96A6234855;4371.
  ) 
 Here is how much of TeX's memory you used:
- 10977 strings out of 474485
- 173547 string characters out of 5743735
+ 10996 strings out of 474485
+ 174216 string characters out of 5743735
  1934542 words of memory out of 5000000
- 33080 multiletter control sequences out of 15000+600000
+ 33095 multiletter control sequences out of 15000+600000
  568322 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,804b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,804b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk>
-Output written on c:\Users\rodri\Documents\proyectoPID\laTex\laTex\main.pdf (13 pages, 3570544 bytes).
+Output written on c:\Users\rodri\Documents\proyectoPID\laTex\laTex\main.pdf (14 pages, 3852735 bytes).
 PDF statistics:
- 604 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 

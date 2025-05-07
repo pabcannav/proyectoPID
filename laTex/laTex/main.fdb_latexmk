@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746352515.94167 "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" "laTex/main.pdf" "main" 1746352519.90659 0
+["pdflatex"] 1746632247.32442 "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" "laTex/main.pdf" "main" 1746632249.40661 0
   "../img/extensions.png" 1745995448 81963 499072c7962b75cb9ab3acb9690436c8 ""
   "../img/haar_cascade.png" 1745313799 121794 363f1199c0bd96aeeb8b6179685ec628 ""
   "../img/haar_feat.png" 1745316495 24602 98e63f2daf68886f0c2f144b79777b32 ""
@@ -9,6 +9,8 @@
   "../img/hf3.png" 1745316633 352132 05a9f91bbedb2213cdb08560e24024c4 ""
   "../img/menu.png" 1745995448 1192 feeb6f21d4c9dcf34c9454172b9c6990 ""
   "../img/miktex.png" 1745995448 65515 198bed5ec125b85986a95d707c97a0a8 ""
+  "../img/multImages_face_detection103.jpg" 1746522644 144023 99b7d0e407c872cbaad257d9a5db9b10 ""
+  "../img/multImages_face_detection15.jpg" 1746631759 134404 e95a3c0aef81ac73075f62badffd1917 ""
   "../img/vsc.png" 1745995448 59178 571a6931cda71755ee9bcb46db4cec17 ""
   "../img/woodcutters_face_detection.jpg" 1746352513 317015 fa30fb122837b1278245aa7013d27817 ""
   "../img/woodcutters_face_detection103.jpg" 1745401207 324409 aefd862bce9be4bfd4a1d3f16f235193 ""
@@ -100,11 +102,11 @@
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/rodri/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" 1746266955 20819 38f160906b2156859687abaf6612bda0 ""
-  "laTex/main.aux" 1746352519 4887 eb8fb58f2b7ebbf4a346d1fdae1c66b4 "pdflatex"
-  "laTex/main.out" 1746352519 4371 c144af6294ef314916fd3c96a6234855 "pdflatex"
-  "laTex/main.toc" 1746352519 1974 0fad9b2508bf8982de40a964a51835aa "pdflatex"
-  "main.tex" 1746266955 20819 38f160906b2156859687abaf6612bda0 ""
+  "c:/Users/rodri/Documents/proyectoPID/laTex/main.tex" 1746632244 22106 ebc90d6287dbb0f808e3bcf98a92cd05 ""
+  "laTex/main.aux" 1746632249 5239 2a17ce4704681b60e937dc8cb060b333 "pdflatex"
+  "laTex/main.out" 1746632249 4371 c144af6294ef314916fd3c96a6234855 "pdflatex"
+  "laTex/main.toc" 1746632249 1975 c3d3c2c9dc99737f1e8a0ead4c3ff1bd "pdflatex"
+  "main.tex" 1746632244 22106 ebc90d6287dbb0f808e3bcf98a92cd05 ""
   (generated)
   "laTex/main.aux"
   "laTex/main.log"
