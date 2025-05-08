@@ -129,7 +129,102 @@ OpenCV proporciona herramientas avanzadas para el procesamiento de imágenes y l
 
 \subsection{Implementación de características de Cascadas de Haar}
 
-En esta implementación vamos a experimentar en un archivo Notebook de Python con los filtros que utiliza el algoritmo de cascadas de Haar para obtener características propias de una cara.
+En esta implementación vamos a experimentar en un archivo Notebook de Python con los filtros que utiliza el algoritmo de cascadas de Haar para obtener características propias de una cara. Este archivo lo podemos encontrar en la carpeta cascadas\_propias del repositorio del proyecto.
+
+Para ello vamos a utilizar como referencia la siguiente imagen de una cara.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.40\textwidth]{../img/cara.png}
+    \caption{Imagen de referencia del archivo cascadas.ipynb.}
+\end{figure}
+
+Los filtros o kernels que vamos a utilizar son los mismos que se muestran en el apartado 2.1 Conceptualizando las Cascadas de Haar.
+Los cuales serán implementados de la siguiente manera; la parte blanca estará ocupada por -1's mientras que la parte negra estará ocupada por 1's.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../img/haar_feat.png}
+    \caption{Kernels.}
+\end{figure}
+
+Lo primero que vamos a hacer será cargar la imagen original y redimensionarla a 300 x 300 píxeles.
+
+Voy a crear los primeros dos kernels, los cuales se encargarán de mostrar \underline{características de bordes}.
+Para ello voy a crear dos matrices de ceros y después modificaré el valor de las filos o columnas. La primera tendrá tamaño dos filas por tres columnas; la primera fila sera de -1's y la segunda de 1's.
+La segunda matriz tendrá un tamaño de dos filas por cuatro columnas, donde las dos columnas de la izquieda serán de -1's y las dos columnas de la derecha tendrán valores de 1's.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{../img/k1k2.png}
+    \caption{Kernel1 y Kernel2.}
+\end{figure}
+
+Lo siguiente que voy a hacer será pasar estos filtros por la imagen de la cara original para poder visualizar que características resarta estos filtros.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.80\textwidth]{../img/resultadok1k2.png}
+    \caption{Resultado al aplicar kernel1 y kernel2 sobre la imagen original.}
+\end{figure}
+
+Como se puede observar en la figura 9 el kernel 1 nos sirve para destacar bordes horizontales.
+Esto lo podemos ver en el borde entre los dos labios o en los bordes horizontales que podemos observar en los ojos, además se puede apreciar el borde en las cejas.
+
+El kernel 2 destaca bordes verticales, esto lo podemos observar en los bordes que detecta este filtro sobre los ojos.
+También se pueden apreciar algunas zonas verticales de la nariz.\\
+
+Los siguientes dos kernels que voy a crear serán los encargados de destacar o resaltar \underline{características lineales}.
+Para ello el kernel 3 tendrá una estructura de dos filas por tres columnas.
+La columna central tendrá valores de 1's, mientra que las otras dos columnas tendrán valores de -1's.
+El kernel 4 tendrá un tamaño de tres filas por tres columnas, la fila del medio tendrá valores de 1's, mientras que el resto de filas tendrá valor de -1's.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.30\textwidth]{../img/k3k4.png}
+    \caption{Kernel3 y Kernel4.}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.80\textwidth]{../img/resultadok3k4.png}
+    \caption{Resultado al aplicar kernel3 y kernel4 sobre la imagen original.}
+    \label{fig:k3k4}
+\end{figure}
+
+Como se puede observar en la Figura \ref{fig:k3k4}, con estos dos filtros lo que vamos a destacar son características lineales.
+Si observamos podemos ver que las cejas se muestran como dos lineas de color claro.
+También se puede observar una linea oscura que recorre la nariz de arriba a abajo.
+También podemos observar una linea algo más clara que corresponde con la boca.
+Además se pueden ver los ojos como un circulo claro sobre un fondo más oscuro.
+
+En estas dos imágenes se puede observar com mayor claridad lo que buscan las característica de haar.
+La diferencia de contraste entre característica propias de un rostro.\\
+
+Por último voy a implementar un kernel para \underline{características rectangulares}.
+Este kernel tendrá tamaño cuatro filas por cuatro columnas, se dividirá en cuatro partes iguales como podemos ver a continuación.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.30\textwidth]{../img/k5.png}
+    \caption{Kernel5.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.50\textwidth]{../img/resultadok5.png}
+    \caption{Resultado al aplicar el Kernel5.}
+\end{figure}
+
+Como se puede ver en la anterior imagen con este filtro se destacan característica rectangulares.
+Como podemos ver alrededor de los ojos o incluso en las fosas nasales.\\
+
+
+
+Con estas implementaciones nos podemos hacer una idea de las características que busca el algoritmo de Haar, para posteriomente aprender según las diferentes regiones de contraste que puede tener una cara.
+Hay que tener en cuenta que cada cara es diferente, además depende de la luz, de si esa cara está girada hacia un lado o hacia otro; por ello el algoritmo necesita gran cantidad de imágenes de caras para poder tener en cuenta toda esta variabilidad.
+
+
 
 \subsection{Implementación de Detección de Caras}
 

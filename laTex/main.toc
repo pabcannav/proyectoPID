@@ -6,17 +6,17 @@
 \contentsline {subsection}{\numberline {2.3}Mejorando el Clasificador de Cascadas de Haar}{6}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Implementación/Experimentación}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Implementación de características de Cascadas de Haar}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Implementación de Detección de Caras}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Impementación de proyecto cameo (Intercambio de caras)}{9}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Manual de usuario}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Instalación de Latex en Visual Studio Code}{10}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusiones}{12}{section.5}%
-\contentsline {section}{\numberline {6}Autoevaluación de cada miembro}{12}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Autoevaluación de Alejandro}{12}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Autoevaluación de Pablo}{12}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Autoevaluación de Salvador}{12}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Tabla de tiempos}{12}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Tabla de tiempos del grupo}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Tabla de tiempos de Alejandro}{12}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Tabla de tiempos de Pablo}{12}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Tabla de tiempos de Salvador}{12}{subsection.7.4}%
+\contentsline {subsection}{\numberline {3.2}Implementación de Detección de Caras}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Impementación de proyecto cameo (Intercambio de caras)}{13}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Manual de usuario}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Instalación de Latex en Visual Studio Code}{14}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusiones}{16}{section.5}%
+\contentsline {section}{\numberline {6}Autoevaluación de cada miembro}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Autoevaluación de Alejandro}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Autoevaluación de Pablo}{16}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Autoevaluación de Salvador}{16}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Tabla de tiempos}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Tabla de tiempos del grupo}{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Tabla de tiempos de Alejandro}{16}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Tabla de tiempos de Pablo}{16}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Tabla de tiempos de Salvador}{16}{subsection.7.4}%
