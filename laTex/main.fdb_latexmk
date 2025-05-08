@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746530901.15693 "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" "main.pdf" "main" 1746530902.14383 0
+["pdflatex"] 1746716211.41 "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" "main.pdf" "main" 1746716212.4301 0
   "../img/extensions.png" 1745504636 81963 499072c7962b75cb9ab3acb9690436c8 ""
   "../img/haar_cascade.png" 1745504636 121794 363f1199c0bd96aeeb8b6179685ec628 ""
   "../img/haar_feat.png" 1745504636 24602 98e63f2daf68886f0c2f144b79777b32 ""
@@ -9,6 +9,8 @@
   "../img/hf3.png" 1745504636 352132 05a9f91bbedb2213cdb08560e24024c4 ""
   "../img/menu.png" 1745504636 1192 feeb6f21d4c9dcf34c9454172b9c6990 ""
   "../img/miktex.png" 1745504636 65515 198bed5ec125b85986a95d707c97a0a8 ""
+  "../img/multImages_face_detection103.jpg" 1746663422 144023 99b7d0e407c872cbaad257d9a5db9b10 ""
+  "../img/multImages_face_detection15.jpg" 1746663422 134404 e95a3c0aef81ac73075f62badffd1917 ""
   "../img/vsc.png" 1745504636 59178 571a6931cda71755ee9bcb46db4cec17 ""
   "../img/woodcutters_face_detection.jpg" 1745504636 317015 fa30fb122837b1278245aa7013d27817 ""
   "../img/woodcutters_face_detection103.jpg" 1745504636 324409 aefd862bce9be4bfd4a1d3f16f235193 ""
@@ -100,11 +102,11 @@
   "C:/Users/alw15/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/alw15/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/alw15/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" 1746530854 20819 38f160906b2156859687abaf6612bda0 ""
-  "main.aux" 1746530901 4887 eb8fb58f2b7ebbf4a346d1fdae1c66b4 "pdflatex"
-  "main.out" 1746530901 4371 c144af6294ef314916fd3c96a6234855 "pdflatex"
-  "main.tex" 1746530854 20819 38f160906b2156859687abaf6612bda0 ""
-  "main.toc" 1746530901 1974 0fad9b2508bf8982de40a964a51835aa "pdflatex"
+  "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" 1746716209 22325 2fab8fca914751dbd6cd713c6ce76a9c ""
+  "main.aux" 1746716212 5265 092d85a143d536e194ec798a618e4248 "pdflatex"
+  "main.out" 1746716212 4511 8ca98befbbc9484175d38ebc2ea276c4 "pdflatex"
+  "main.tex" 1746716209 22325 2fab8fca914751dbd6cd713c6ce76a9c ""
+  "main.toc" 1746716212 2001 796ef91d0f401b2de65f365c186360e7 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
