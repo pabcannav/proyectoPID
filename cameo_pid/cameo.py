@@ -9,31 +9,32 @@ class Cameo(object):
 
     def __init__(self):
         self._windowManager = WindowManager('Cameo',
-                                            self.onKeypress)
+                                            self.onKeypress)    # Gestionar ventana de visualización.
         self._captureManager = CaptureManager(
-            cv2.VideoCapture(0), self._windowManager, True)
-        self._faceTracker = FaceTracker()
+            cv2.VideoCapture(0), self._windowManager, True)     # Usar cámara predeterminada
+        self._faceTracker = FaceTracker()   # Usar FaceTraker. Se encarga de detectar caras en la imagen.
         self._shouldDrawDebugRects = False
         
 
     def run(self):
         """Run the main loop."""
-        self._windowManager.createWindow()
+        self._windowManager.createWindow()  # Crear y mostrar ventana para visualizar el video.
+        # El siguiente bucle se mantiene activo mientras la ventana está abierta.
         while self._windowManager.isWindowCreated:
             self._captureManager.enterFrame()
-            frame = self._captureManager.frame
+            frame = self._captureManager.frame  # Obtiene el fotograma actual.
 
             if frame is not None:
 
-                self._faceTracker.update(frame)
-                faces = self._faceTracker.faces
+                self._faceTracker.update(frame) # Actualiza el rastreador de caras para el fotograma seleccionado
+                faces = self._faceTracker.faces # Obtiene la lista de las caras detectadas.
                 rects.swapRects(frame, frame,
-                                [face.faceRect for face in faces])
+                                [face.faceRect for face in faces])  # Intercambia las imágenes dentro de los rectangulos alrededor de las caras.
 
                 
 
                 if self._shouldDrawDebugRects:
-                    self._faceTracker.drawDebugRects(frame)
+                    self._faceTracker.drawDebugRects(frame) # Dibuja rectangulos alrededor de las caras detectadas.
 
             self._captureManager.exitFrame()
             self._windowManager.processEvents()
@@ -41,10 +42,10 @@ class Cameo(object):
     def onKeypress(self, keycode):
         """Handle a keypress.
 
-        space  -> Take a screenshot.
-        tab    -> Start/stop recording a screencast.
-        x      -> Start/stop drawing debug rectangles around faces.
-        escape -> Quit.
+        space  -> Tomar captura de pantalla.
+        tab    -> Activar/Desactivar grabación de pantalla.
+        x      -> Activa/Desactivar rectangulo alrededor de las caras.
+        escape -> Salir.
 
         """
         if keycode == 32: # space
@@ -64,5 +65,5 @@ class Cameo(object):
 
 
 if __name__=="__main__":
-    Cameo().run() # uncomment for single camera
+    Cameo().run() 
     
