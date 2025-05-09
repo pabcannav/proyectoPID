@@ -4,7 +4,7 @@ import utils
 
 
 class Face(object):
-    """Data on facial features: face, eyes."""
+    """Datos sobre rasgos faciales."""
 
     def __init__(self):
         self.faceRect = None
@@ -12,7 +12,7 @@ class Face(object):
         self.rightEyeRect = None
 
 class FaceTracker(object):
-    """A tracker for facial features: face, eyes."""
+    """Rastreador de rasgos faciales."""
 
     def __init__(self, scaleFactor = 1.2, minNeighbors = 2,
                  flags = cv2.CASCADE_SCALE_IMAGE):
@@ -30,7 +30,7 @@ class FaceTracker(object):
 
     @property
     def faces(self):
-        """The tracked facial features."""
+        """Los rasgos faciales rastreados."""
         return self._faces
 
     def update(self, image):

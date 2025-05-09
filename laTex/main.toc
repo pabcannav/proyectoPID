@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {3.1}Implementación de características de Cascadas de Haar}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Implementación de Detección de Caras}{10}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Impementación de proyecto cameo (Intercambio de caras)}{13}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Manual de usuario}{13}{section.4}%
+\contentsline {section}{\numberline {4}Manual de usuario}{14}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Instalación de Latex en Visual Studio Code}{14}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Conclusiones}{16}{section.5}%
 \contentsline {section}{\numberline {6}Autoevaluación de cada miembro}{16}{section.6}%
