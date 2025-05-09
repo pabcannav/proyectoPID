@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746730724.32876 "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" "main.pdf" "main" 1746730725.61164 0
+["pdflatex"] 1746751352.91889 "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" "main.pdf" "main" 1746751354.14455 0
   "../img/cara.png" 1745508011 95449 149569a9f2a3b69daf343c86a4f3b23d ""
   "../img/extensions.png" 1745504636 81963 499072c7962b75cb9ab3acb9690436c8 ""
   "../img/haar_cascade.png" 1745504636 121794 363f1199c0bd96aeeb8b6179685ec628 ""
@@ -109,11 +109,11 @@
   "C:/Users/alw15/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/alw15/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/alw15/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" 1746730723 27345 6b8e609a895986e57a21b8fa466ed2dd ""
-  "main.aux" 1746730725 6545 80ec8ab952e335976ac8fb3fb89c7b9e "pdflatex"
-  "main.out" 1746730725 4511 8ca98befbbc9484175d38ebc2ea276c4 "pdflatex"
-  "main.tex" 1746730723 27345 6b8e609a895986e57a21b8fa466ed2dd ""
-  "main.toc" 1746730725 2004 695df3992ed180c775dac8fb7a5042ae "pdflatex"
+  "c:/Users/alw15/Univ-24.25-C2/PID/Trabajo/Repositorios/proyectoPID/laTex/main.tex" 1746751352 28322 d6b064a20cea06dcff21772795eff6ab ""
+  "main.aux" 1746751353 6545 9267df1f55889d4d62d930b09151533f "pdflatex"
+  "main.out" 1746751353 4511 8ca98befbbc9484175d38ebc2ea276c4 "pdflatex"
+  "main.tex" 1746751352 28322 d6b064a20cea06dcff21772795eff6ab ""
+  "main.toc" 1746751353 2004 695df3992ed180c775dac8fb7a5042ae "pdflatex"
   (generated)
   "main.aux"
   "main.log"

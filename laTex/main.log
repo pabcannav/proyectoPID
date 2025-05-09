@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.8)  8 MAY 2025 20:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.8)  9 MAY 2025 02:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -563,19 +563,22 @@ l.296     \item \textbf
 <../img/vsc.png, id=233, 734.745pt x 415.5525pt>
 File: ../img/vsc.png Graphic file (type png)
 <use ../img/vsc.png>
-Package pdftex.def Info: ../img/vsc.png  used on input line 329.
+Package pdftex.def Info: ../img/vsc.png  used on input line 343.
 (pdftex.def)             Requested size: 207.0021pt x 117.07042pt.
 <../img/extensions.png, id=234, 656.4525pt x 413.29407pt>
 File: ../img/extensions.png Graphic file (type png)
 <use ../img/extensions.png>
-Package pdftex.def Info: ../img/extensions.png  used on input line 339.
+Package pdftex.def Info: ../img/extensions.png  used on input line 353.
 (pdftex.def)             Requested size: 207.0021pt x 130.32706pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <../img/miktex.png, id=236, 1164.60094pt x 628.59843pt>
 File: ../img/miktex.png Graphic file (type png)
 <use ../img/miktex.png>
-Package pdftex.def Info: ../img/miktex.png  used on input line 349.
+Package pdftex.def Info: ../img/miktex.png  used on input line 363.
 (pdftex.def)             Requested size: 207.0021pt x 111.72327pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -583,29 +586,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.356 
-      
+l.370 
+       <../img/vsc.png>]
+<../img/menu.png, id=243, 192.72pt x 24.84282pt>
+File: ../img/menu.png Graphic file (type png)
+<use ../img/menu.png>
+Package pdftex.def Info: ../img/menu.png  used on input line 375.
+(pdftex.def)             Requested size: 207.0021pt x 26.68388pt.
+ [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.356 
-       <../img/vsc.png> <../img/extensions.png>]
-<../img/menu.png, id=245, 192.72pt x 24.84282pt>
-File: ../img/menu.png Graphic file (type png)
-<use ../img/menu.png>
-Package pdftex.def Info: ../img/menu.png  used on input line 361.
-(pdftex.def)             Requested size: 207.0021pt x 26.68388pt.
- [15
+l.399 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.385 \newpage
+l.399 \newpage
               
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.385 \newpage
-               <../img/miktex.png> <../img/menu.png>] [16] [17] [18] (main.aux
+l.399 \newpage
+               <../img/extensions.png> <../img/miktex.png> <../img/menu.png>] [16] [17] [18] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -619,13 +622,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  11058 strings out of 474486
  175469 string characters out of 5743756
- 1933542 words of memory out of 5000000
+ 1934542 words of memory out of 5000000
  33144 multiletter control sequences out of 15000+600000
  568322 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,833b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\alw15\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk>
-Output written on main.pdf (18 pages, 4187078 bytes).
+Output written on main.pdf (18 pages, 4187806 bytes).
 PDF statistics:
  664 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
