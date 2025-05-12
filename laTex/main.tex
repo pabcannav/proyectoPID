@@ -127,7 +127,7 @@ En esta implementación vamos a experimentar en un archivo Notebook de Python co
 
 Para ello vamos a utilizar como referencia la siguiente imagen de una cara.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.40\textwidth]{../img/cara.png}
     \caption{Imagen de referencia del archivo cascadas.ipynb.}
@@ -136,7 +136,7 @@ Para ello vamos a utilizar como referencia la siguiente imagen de una cara.
 Los filtros o kernels que vamos a utilizar son los mismos que se muestran en el apartado 2.1 Conceptualizando las Cascadas de Haar.
 Los cuales serán implementados de la siguiente manera; la parte blanca estará ocupada por -1's mientras que la parte negra estará ocupada por 1's.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{../img/haar_feat.png}
     \caption{Kernels.}
@@ -145,10 +145,10 @@ Los cuales serán implementados de la siguiente manera; la parte blanca estará 
 Lo primero que vamos a hacer será cargar la imagen original y redimensionarla a 300 x 300 píxeles.
 
 Voy a crear los primeros dos kernels, los cuales se encargarán de mostrar \underline{características de bordes}.
-Para ello voy a crear dos matrices de ceros y después modificaré el valor de las filos o columnas. La primera tendrá tamaño dos filas por tres columnas; la primera fila sera de -1's y la segunda de 1's.
+Para ello voy a crear dos matrices de ceros y después modificaré el valor de las filas o columnas. La primera tendrá tamaño dos filas por tres columnas; la primera fila sera de -1's y la segunda de 1's.
 La segunda matriz tendrá un tamaño de dos filas por cuatro columnas, donde las dos columnas de la izquieda serán de -1's y las dos columnas de la derecha tendrán valores de 1's.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{../img/k1k2.png}
     \caption{Kernel1 y Kernel2.}
@@ -156,13 +156,14 @@ La segunda matriz tendrá un tamaño de dos filas por cuatro columnas, donde las
 
 Lo siguiente que voy a hacer será pasar estos filtros por la imagen de la cara original para poder visualizar que características resarta estos filtros.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.80\textwidth]{../img/resultadok1k2.png}
     \caption{Resultado al aplicar kernel1 y kernel2 sobre la imagen original.}
+    \label{f:f}
 \end{figure}
 
-Como se puede observar en la figura 9 el kernel 1 nos sirve para destacar bordes horizontales.
+Como se puede observar en la figura \ref{f:f} el kernel 1 nos sirve para destacar bordes horizontales.
 Esto lo podemos ver en el borde entre los dos labios o en los bordes horizontales que podemos observar en los ojos, además se puede apreciar el borde en las cejas.
 
 El kernel 2 destaca bordes verticales, esto lo podemos observar en los bordes que detecta este filtro sobre los ojos.
@@ -173,13 +174,13 @@ Para ello el kernel 3 tendrá una estructura de dos filas por tres columnas.
 La columna central tendrá valores de 1's, mientra que las otras dos columnas tendrán valores de -1's.
 El kernel 4 tendrá un tamaño de tres filas por tres columnas, la fila del medio tendrá valores de 1's, mientras que el resto de filas tendrá valor de -1's.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.30\textwidth]{../img/k3k4.png}
     \caption{Kernel3 y Kernel4.}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.80\textwidth]{../img/resultadok3k4.png}
     \caption{Resultado al aplicar kernel3 y kernel4 sobre la imagen original.}
@@ -512,7 +513,6 @@ También he aprendido como funciona la detección de objetos usando Cascadas de 
     
 
 \subsection{Tabla de tiempos de Salvador}
-
 
 \begin{table}[H]
 \centering
