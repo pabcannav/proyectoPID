@@ -52,28 +52,21 @@ la sensibilidad del detector y la reducción de falsos positivos.
 
 \section{Planteamiento teórico}
 
-En esta sección se detalla el planteamiento teórico del capítulo 5 del libro\cite{1}, que se centrará en los fundamentos de las cascadas de Haar mediante el uso de OpenCV para la detección de caras. Se dividirá en 3 subapartados, correspondientes a los subapartados del propio capítulo:
+El método de cascadas de Haar es una técnica de visión artificial ampliamente utilizada para la detección rápida y robusta de objetos, siendo la detección de rostros su aplicación más destacada y el contexto en el que fue introducido por primera vez. Esta técnica fue presentada en el influyente artículo ``Robust Real-Time Face Detection'' por Paul Viola y Michael Jones en 2001. El marco propuesto por Viola y Jones se basa en tres contribuciones principales que, combinadas, permiten un detector extremadamente rápido y fiable:
 
-Los clasificadores en cascada de Haar funcionan mediante la aplicación de
-una serie de clasificadores, cada uno entrenado para descartar la mayoría de
-las regiones negativas mientras retiene las regiones que contienen el objeto de
-intés (en este caso, rostros). Estos clasificadores se basan en la evaluación
-de características simples, computacionalmente eficientes, que codifican diferencias
-en la intensidad de píxeles entre regiones rectangulares adyacentes. Para
-detectar rostros en imágenes de diferentes tamaños, se emplea una ventana de
-detección que se desliza sobre la imagen a diferentes escalas, generando múltiples
-subventanas para su análisis.
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.6\textwidth]{../img/haar_iter.png}
-    \caption{Ejemplo de iteración sobre características de una cara.\cite{3}}
-\end{figure}
+\begin{enumerate}
+    \item \textbf{Características Haar-like:} En lugar de procesar directamente los píxeles brutos de una imagen, el sistema se basa en el uso de características simples denominadas ``Haar-like''. Estas características describen patrones de contraste entre regiones adyacentes de una sub-imagen. Funcionan calculando la diferencia entre la suma de los píxeles en áreas rectangulares blancas y negras dentro de una ventana de detección deslizante. Por ejemplo, pueden detectar bordes, vértices o líneas finas basándose en estos cambios de intensidad. El uso de características en lugar de píxeles directos ayuda a codificar conocimiento de dominio y permite que el sistema opere mucho más rápido. Además, para calcular estas características de forma extremadamente rápida, Viola y Jones introdujeron la representación de imagen conocida como ``Integral Image''.
+    \item \textbf{Clasificador Simple y Eficiente con Selección de Características:} Se construye un clasificador potente combinando una colección de funciones de clasificación débiles. Para ello, se utiliza el algoritmo de aprendizaje AdaBoost. AdaBoost tiene la función dual de entrenar el clasificador y, crucialmente, seleccionar un pequeño número de características críticas de un conjunto muy grande de posibles características. Un clasificador débil se define como una función de clasificación que depende de una única característica Haar-like, junto con un umbral y una polaridad. Aunque ninguna característica individual por sí sola puede realizar la tarea de clasificación con un error bajo, AdaBoost permite seleccionar la característica rectangular que mejor separa los ejemplos positivos (por ejemplo, rostros) de los negativos en cada etapa del entrenamiento. La selección agresiva de características por parte de AdaBoost asegura que, aunque el conjunto inicial de características sea grande y complejo, el clasificador resultante sea computacionalmente eficiente ya que solo necesita evaluar un pequeño subconjunto de características durante la ejecución.
+    \item \textbf{Estructura de Cascada:} La tercera contribución clave es el método para combinar clasificadores progresivamente más complejos en una estructura de cascada. Esta estructura es fundamental para lograr la detección en tiempo real. La idea central es que las sub-ventanas de la imagen que claramente no contienen el objeto buscado (por ejemplo, un rostro) pueden ser descartadas rápidamente en las etapas iniciales de la cascada, que consisten en clasificadores más simples y eficientes. Solo las regiones que superan la prueba de una etapa pasan a la siguiente etapa, que es ligeramente más compleja. Si una sub-ventana es rechazada en cualquier etapa, el procesamiento se detiene para esa región. Esta arquitectura de árbol de decisión degenerado reduce drásticamente la cantidad de cálculo necesario, enfocando el esfuerzo computacional solo en las regiones más prometedoras. Los experimentos demostraron que un clasificador en cascada podía ser significativamente más rápido que un clasificador monolítico con precisión comparable, debido a la capacidad de la primera etapa para descartar la mayoría de los no-objetos.
+\end{enumerate}
 
-En OpenCV, la detección de múltiples escalas de rostros se implementa
-mediante la función detectMultiScale del objeto cv2.CascadeClassifier.
-Esta función toma como entrada una imagen y varios parámetros que controlan
-el proceso de búsqueda de objetos. Dos de los parámetros más influyentes en el
-rendimiento del detector son scaleFactor y minNeighbors.
+En resumen, el planteamiento teórico de las cascadas de Haar para la detección de objetos se basa en el uso de características locales de contraste (Haar-like), la selección de las características más discriminatorias y el entrenamiento de clasificadores débiles mediante AdaBoost, y la organización de estos clasificadores en una cascada secuencial que permite un procesamiento extremadamente rápido al descartar eficientemente las regiones de fondo.
+
+Implementaciones como la proporcionada por OpenCV incluyen datos de cascada pre-entrenados (en archivos XML) y métodos como \texttt{detectMultiScale}que manejan la aplicación de la cascada sobre una imagen. Para manejar la invariancia a la escala, la técnica típicamente reescala la imagen de entrada en múltiples tamaños, creando una pirámide de imágenes, mientras la ventana de detección mantiene un tamaño constante. Sin embargo, es importante notar que las cascadas de Haar, tal como se usan comúnmente, no son robustas a cambios significativos en la rotación o perspectiva del objeto.
+
+A pesar de sus limitaciones con la rotación y perspectiva, la eficiencia y la capacidad de detección en tiempo real de las cascadas de Haar las han convertido en una técnica fundamental en visión artificial, a menudo utilizada en combinación con otras técnicas, como la información de profundidad para tareas de segmentación o intercambio de rostros.
+
+
 
 \subsection{Conceptualizando las Cascadas de Haar}
 
@@ -471,6 +464,48 @@ También he aprendido como funciona la detección de objetos usando Cascadas de 
 
 \subsection{Tabla de tiempos de Pablo}
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|p{10cm}|c|}
+    \hline
+    \textbf{Fecha} & \textbf{Tarea} & \textbf{Tiempo} \\
+    \hline
+    12/02/2025 & Elección tema y lectura documentación & 2 horas \\
+    26/02/2025 & Sesión de Seguimiento & 2 horas \\
+    26/02/2025 & Implementación cascadas de Haar & 2 horas \\
+    09/03/2025 & Lectura documentación e implementación cascadas Haar & 1 hora 30 min \\
+    15/03/2025 & Pruebas iniciales & 2 horas \\
+    22/03/2025 & Ajustes de parámetros & 1 hora 30 min \\
+    29/03/2025 & Documentación & 2 horas \\
+    02/04/2025 & Implementación de detección en vídeo & 2 horas \\
+    04/04/2025 & Depuración & 1 hora 30 min \\
+    06/04/2025 & Documentación & 2 horas \\
+    08/04/2025 & Documentación & 2 horas \\
+    17/04/2025 & Documentación LaTeX & 2 horas \\
+    18/04/2025 & Documentación LaTeX & 3 horas \\
+    19/04/2025 & Escritura de la sección teórica sobre cascadas de Haar en LaTeX & 2 horas \\
+    21/04/2025 & Búsqueda y selección de referencias y citas para la documentación & 2 horas \\
+    23/04/2025 & Inserción de imágenes, esquemas & 2 horas \\
+    24/04/2025 & Revisión de formato, bibliografía y consistencia en LaTeX & 2 horas \\
+    25/04/2025 & Revisión técnica del apartado Haar & 2 horas \\
+    26/04/2025 & Ajuste de figuras, tablas & 1 hora 30 min \\
+    01/05/2025 & Documentación Artículo Cascadas Haar & 4 horas \\
+    02/05/2025 & Desgranar funcionamiento Cascadas Haar & 4 horas \\
+    03/05/2025 & Redactar funcionamiento Cascadas Haar & 4 horas \\
+    04/05/2025 & Redactar funcionamiento Cascadas Haar & 4 horas \\
+    05/05/2025 & Plantear las Cascadas Haar para la exposición & 4 horas \\
+    06/05/2025 & Redactar explicación simplificada & 4 horas \\
+    07/05/2025 & Preparar la Presentación & 4 horas \\
+    08/05/2025 & Preparar la Presentación & 2 horas \\
+    09/05/2025 & Preparar la Presentación & 2 horas \\
+    10/05/2025 & Preparar la Presentación & 2 horas \\
+    \textbf{Tiempo total} & & 71 horas \\
+    \hline
+    \end{tabular}
+    \caption{Registro de tareas y tiempos del proyecto (Pablo)}
+    \end{table}
+    
+
 \subsection{Tabla de tiempos de Salvador}
 
 
@@ -519,7 +554,10 @@ También he aprendido como funciona la detección de objetos usando Cascadas de 
 \bibitem{4} \textit{Pyramid (image processing)}, disponible en \href{https://en.wikipedia.org/wiki/Pyramid_(image_processing)}{Wikipedia}
 \bibitem{5} \textit{OpenCV Cascade Classifier}, disponible en \href{https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html}{docs.opencv.org}
 \bibitem{6} \textit{Robust Real-Time Face Detection. Viola and Jones}, disponible \href{https://www.face-rec.org/algorithms/Boosting-Ensemble/16981346.pdf}{aquí}
+\bibitem{7} \textit{Viola, Paul, y Michael J. Jones. «Robust Real-Time Face Detection». International Journal of Computer Vision 57, n.º 2 (1 de mayo de 2004): 137-54. https://doi.org/10.1023/B:VISI.0000013087.49260.fb.
+}
 \end{thebibliography}
+
 
 \newpage
 \section*{Anexos}
